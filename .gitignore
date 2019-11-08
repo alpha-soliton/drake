@@ -26,3 +26,6 @@
 
 # User-specified configuration
 /user.bazelrc
+
+# to not to add robot model of musashi
+/musashiwhole_model
