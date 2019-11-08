@@ -1,0 +1,2072 @@
+<?xml version="1.0" ?>
+<mujoco model="MUSASHIWHOLE">
+ 
+    
+ <compiler angle="radian"/>
+ 
+    
+ <option collision="predefined"/>
+ 
+    
+ <size nconmax="100" njmax="500"/>
+ 
+    
+ <asset>
+  
+        
+  <mesh file="PELVIS_LINK_mesh.stl" name="PELVIS_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_HIP_JM_YAW_LINK_mesh.stl" name="LLEG_HIP_JM_YAW_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_HIP_JM_ROLL_LINK_mesh.stl" name="LLEG_HIP_JM_ROLL_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_FEMUR_LINK_mesh.stl" name="LLEG_FEMUR_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_KNEE_JM_PITCH_LINK_mesh.stl" name="LLEG_KNEE_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_TIBIA_LINK_mesh.stl" name="LLEG_TIBIA_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_ANKLE_JM_PITCH_LINK_mesh.stl" name="LLEG_ANKLE_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_FOOT_LINK_mesh.stl" name="LLEG_FOOT_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_HEEL_LINK_mesh.stl" name="LLEG_HEEL_LINK_mesh"/>
+  
+        
+  <mesh file="LLEG_TOE_LINK_mesh.stl" name="LLEG_TOE_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_HIP_JM_YAW_LINK_mesh.stl" name="RLEG_HIP_JM_YAW_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_HIP_JM_ROLL_LINK_mesh.stl" name="RLEG_HIP_JM_ROLL_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_FEMUR_LINK_mesh.stl" name="RLEG_FEMUR_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_KNEE_JM_PITCH_LINK_mesh.stl" name="RLEG_KNEE_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_TIBIA_LINK_mesh.stl" name="RLEG_TIBIA_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_ANKLE_JM_PITCH_LINK_mesh.stl" name="RLEG_ANKLE_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_FOOT_LINK_mesh.stl" name="RLEG_FOOT_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_HEEL_LINK_mesh.stl" name="RLEG_HEEL_LINK_mesh"/>
+  
+        
+  <mesh file="RLEG_TOE_LINK_mesh.stl" name="RLEG_TOE_LINK_mesh"/>
+  
+        
+  <mesh file="SPINE_JM_PITCH_LINK_mesh.stl" name="SPINE_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="SPINE_JM_ROLL_LINK_mesh.stl" name="SPINE_JM_ROLL_LINK_mesh"/>
+  
+        
+  <mesh file="CHEST_LINK_mesh.stl" name="CHEST_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_HUMERUS_DUMMY1_LINK_mesh.stl" name="LARM_HUMERUS_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_HUMERUS_DUMMY2_LINK_mesh.stl" name="LARM_HUMERUS_DUMMY2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_HUMERUS_LINK_mesh.stl" name="LARM_HUMERUS_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_FOREARM_DUMMY1_LINK_mesh.stl" name="LARM_FOREARM_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_FOREARM_LINK_mesh.stl" name="LARM_FOREARM_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_HAND_DUMMY1_LINK_mesh.stl" name="LARM_HAND_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_HAND_LINK_mesh.stl" name="LARM_HAND_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_INDEX3_LINK_mesh.stl" name="LARM_INDEX3_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_INDEX2_LINK_mesh.stl" name="LARM_INDEX2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_INDEX1_LINK_mesh.stl" name="LARM_INDEX1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_LITTLE3_LINK_mesh.stl" name="LARM_LITTLE3_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_LITTLE2_LINK_mesh.stl" name="LARM_LITTLE2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_LITTLE1_LINK_mesh.stl" name="LARM_LITTLE1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_MIDDLE3_LINK_mesh.stl" name="LARM_MIDDLE3_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_MIDDLE2_LINK_mesh.stl" name="LARM_MIDDLE2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_MIDDLE1_LINK_mesh.stl" name="LARM_MIDDLE1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_RING3_LINK_mesh.stl" name="LARM_RING3_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_RING2_LINK_mesh.stl" name="LARM_RING2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_RING1_LINK_mesh.stl" name="LARM_RING1_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_THUMB4_LINK_mesh.stl" name="LARM_THUMB4_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_THUMB3_LINK_mesh.stl" name="LARM_THUMB3_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_THUMB2_LINK_mesh.stl" name="LARM_THUMB2_LINK_mesh"/>
+  
+        
+  <mesh file="LARM_THUMB1_LINK_mesh.stl" name="LARM_THUMB1_LINK_mesh"/>
+  
+        
+  <mesh file="NECK_JM_PITCH_LINK_mesh.stl" name="NECK_JM_PITCH_LINK_mesh"/>
+  
+        
+  <mesh file="NECK_JM_ROLL_LINK_mesh.stl" name="NECK_JM_ROLL_LINK_mesh"/>
+  
+        
+  <mesh file="HEAD_LINK_mesh.stl" name="HEAD_LINK_mesh"/>
+  
+        
+  <mesh file="EYE_DUMMY1_LINK_mesh.stl" name="EYE_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="LEYE_LINK_mesh.stl" name="LEYE_LINK_mesh"/>
+  
+        
+  <mesh file="REYE_LINK_mesh.stl" name="REYE_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_HUMERUS_DUMMY1_LINK_mesh.stl" name="RARM_HUMERUS_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_HUMERUS_DUMMY2_LINK_mesh.stl" name="RARM_HUMERUS_DUMMY2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_HUMERUS_LINK_mesh.stl" name="RARM_HUMERUS_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_FOREARM_DUMMY1_LINK_mesh.stl" name="RARM_FOREARM_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_FOREARM_LINK_mesh.stl" name="RARM_FOREARM_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_HAND_DUMMY1_LINK_mesh.stl" name="RARM_HAND_DUMMY1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_HAND_LINK_mesh.stl" name="RARM_HAND_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_INDEX3_LINK_mesh.stl" name="RARM_INDEX3_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_INDEX2_LINK_mesh.stl" name="RARM_INDEX2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_INDEX1_LINK_mesh.stl" name="RARM_INDEX1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_LITTLE3_LINK_mesh.stl" name="RARM_LITTLE3_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_LITTLE2_LINK_mesh.stl" name="RARM_LITTLE2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_LITTLE1_LINK_mesh.stl" name="RARM_LITTLE1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_MIDDLE3_LINK_mesh.stl" name="RARM_MIDDLE3_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_MIDDLE2_LINK_mesh.stl" name="RARM_MIDDLE2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_MIDDLE1_LINK_mesh.stl" name="RARM_MIDDLE1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_RING3_LINK_mesh.stl" name="RARM_RING3_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_RING2_LINK_mesh.stl" name="RARM_RING2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_RING1_LINK_mesh.stl" name="RARM_RING1_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_THUMB4_LINK_mesh.stl" name="RARM_THUMB4_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_THUMB3_LINK_mesh.stl" name="RARM_THUMB3_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_THUMB2_LINK_mesh.stl" name="RARM_THUMB2_LINK_mesh"/>
+  
+        
+  <mesh file="RARM_THUMB1_LINK_mesh.stl" name="RARM_THUMB1_LINK_mesh"/>
+  
+    
+ </asset>
+ 
+    
+ <worldbody>
+  
+        
+  <geom mesh="PELVIS_LINK_mesh" type="mesh"/>
+  
+        
+  <body name="LLEG_HIP_JM_YAW_LINK" pos="0 0.074848 -0.174">
+   
+            
+   <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+   
+            
+   <joint axis="0 0 1" damping="0.2" limited="true" name="LLEG_HIP_JOINT_Y" pos="0 0 0" range="-1.39626 1.39626"/>
+   
+            
+   <geom mesh="LLEG_HIP_JM_YAW_LINK_mesh" pos="0 0.074848 -0.174" type="mesh"/>
+   
+            
+   <body name="LLEG_HIP_JM_ROLL_LINK" pos="0 0 0">
+    
+                
+    <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+    
+                
+    <joint axis="1 0 0" damping="0.2" limited="true" name="LLEG_HIP_JOINT_R" pos="0 0 0" range="-0.523599 0.698132"/>
+    
+                
+    <geom mesh="LLEG_HIP_JM_ROLL_LINK_mesh" type="mesh"/>
+    
+                
+    <body name="LLEG_FEMUR_LINK" pos="0 0 0">
+     
+                    
+     <inertial diaginertia="1 1 1" mass="2.19" pos="0.024 0.0021 -0.135"/>
+     
+                    
+     <joint axis="0 0.765921 -0.642934" damping="0.2" limited="true" name="LLEG_HIP_JOINT_P" pos="0 0 0" range="-1.5708 1.5708"/>
+     
+                    
+     <geom mesh="LLEG_FEMUR_LINK_mesh" type="mesh"/>
+     
+                    
+     <body name="LLEG_KNEE_JM_PITCH_LINK" pos="-0.003864 0.001455 -0.387444">
+      
+                        
+      <inertial diaginertia="1 1 1" mass="0.72" pos="-0.008065 0 -0.146065"/>
+      
+                        
+      <joint axis="0 1 0" damping="0.2" limited="true" name="LLEG_KNEE_JOINT_P" pos="0 0 0" range="0 1.5708"/>
+      
+                        
+      <geom mesh="LLEG_KNEE_JM_PITCH_LINK_mesh" pos="-0.003864 0.001455 -0.387444" type="mesh"/>
+      
+                        
+      <body name="LLEG_TIBIA_LINK" pos="0 0 0">
+       
+                            
+       <inertial diaginertia="1 1 1" mass="0.75" pos="-0.003285 0 -0.13898"/>
+       
+                            
+       <joint axis="0 0 1" damping="0.2" limited="true" name="LLEG_KNEE_JOINT_Y" pos="0 0 0" range="-0.523599 0.698132"/>
+       
+                            
+       <geom mesh="LLEG_TIBIA_LINK_mesh" type="mesh"/>
+       
+                            
+       <body name="LLEG_ANKLE_JM_PITCH_LINK" pos="0 0 -0.396">
+        
+                                
+        <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+        
+                                
+        <joint axis="0 1 0" damping="0.2" limited="true" name="LLEG_ANKLE_JOINT_P" pos="0 0 0" range="-1.309 1.309"/>
+        
+                                
+        <geom mesh="LLEG_ANKLE_JM_PITCH_LINK_mesh" pos="0 0 -0.396" type="mesh"/>
+        
+                                
+        <body name="LLEG_FOOT_LINK" pos="0 0 0">
+         
+                                    
+         <inertial diaginertia="2.00056 2.00056 2" mass="0.941717" pos="0.0224421 0.000121798 -0.025241" quat="-0.00654824 0.553576 0.00985016 0.832715"/>
+         
+                                    
+         <joint axis="1 0 0" damping="0.2" limited="true" name="LLEG_ANKLE_JOINT_R" pos="0 0 0" range="-1.309 1.309"/>
+         
+                                    
+         <geom mesh="LLEG_FOOT_LINK_mesh" type="mesh"/>
+         
+                                    
+         <geom mesh="LLEG_HEEL_LINK_mesh" pos="-0.012 0 -0.085" type="mesh"/>
+         
+                                    
+         <body name="LLEG_TOE_LINK" pos="0.1195 0 -0.0455">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.368967" pos="0.024319 0.000124 -0.006775"/>
+          
+                                        
+          <joint axis="0 1 0" damping="0.2" limited="true" name="LLEG_TOE_JOINT_P" pos="0 0 0" range="-1.5708 0"/>
+          
+                                        
+          <geom mesh="LLEG_TOE_LINK_mesh" pos="0.1195 0 -0.0455" type="mesh"/>
+          
+                                    
+          <site name="pulled-tibia-1-left" pos="0.0065 0.0 0.013" size="0.005"/>
+          <site name="pulled-tibia-4-left" pos="-0.008 0.0 -0.0165" size="0.005"/>
+         </body>
+         
+                                
+         <site name="pulled-tibia-6-left" pos="0.005 0.0315 -0.0535" size="0.005"/>
+         <site name="pulled-tibia-2-left" pos="0.0545 3.44970957161639e-12 0.00396" size="0.005"/>
+         <site name="via-tibia-1-2-left" pos="0.101956 0.0 -0.031407" size="0.005"/>
+         <site name="via-tibia-1-1-left" pos="0.0405 0.0 0.00346" size="0.005"/>
+         <site name="via-tibia-4-1-left" pos="-0.004 -0.028 -0.056" size="0.005"/>
+         <site name="via-tibia-4-2-left" pos="-0.004 -0.028 -0.0615" size="0.005"/>
+         <site name="via-tibia-4-3-left" pos="0.0 0.0 -0.0615" size="0.005"/>
+         <site name="pulled-tibia-3-left" pos="0.005 -0.0315 -0.0535" size="0.005"/>
+         <site name="pulled-tibia-5-left" pos="-0.0485 0.0 -0.01" size="0.005"/>
+         <site name="via-tibia-4-4-left" pos="0.0205 0.0 -0.0615" size="0.005"/>
+        </body>
+        
+                            
+       </body>
+       
+                        
+       <site name="pull-tibia-6-left" pos="-0.0253000000000024 0.0294999999965504 -0.218506285428355" size="0.005"/>
+       <site name="pulled-femur-2-left" pos="0.0195 3.44969695723502e-12 -0.056" size="0.005"/>
+       <site name="pulled-pelvis-4-left" pos="0.0195 3.44969695723502e-12 -0.056" size="0.005"/>
+       <site name="pull-tibia-3-left" pos="0.0222999999999983 -0.0294999999965507 -0.218506285428355" size="0.005"/>
+       <site name="pull-tibia-2-left" pos="0.052799999999997606 3.44992222532126e-12 -0.251506285428355" size="0.005"/>
+       <site name="pulled-femur-5-left" pos="-0.0195 3.4496968486720903e-12 -0.056" size="0.005"/>
+       <site name="pull-tibia-4-left" pos="-0.0523000000000017 -0.0294999999965507 -0.218506285428355" size="0.005"/>
+       <site name="pull-tibia-1-left" pos="0.0493000000723021 0.0294999999965491 -0.218506285428354" size="0.005"/>
+       <site name="pull-tibia-5-left" pos="-0.0533000000723059 3.4499223338842e-12 -0.251506285428355" size="0.005"/>
+      </body>
+      
+                    
+     </body>
+     
+                
+     <site name="pull-femur-3-left" pos="0.0233000000000005 0.0121753747854482 -0.107746015703373" size="0.005"/>
+     <site name="pull-femur-6-left" pos="-0.0532999999999995 0.07027841608051849 -0.117994750998784" size="0.005"/>
+     <site name="pull-femur-2-left" pos="0.053436208092635294 0.008094455510015839 -0.304189360743632" size="0.005"/>
+     <site name="pulled-pelvis-3-left" pos="-0.000499999999999539 0.005476332770804 -0.0996680070247287" size="0.005"/>
+     <site name="pull-femur-5-left" pos="-0.0531637919073647 0.00809445551001695 -0.304189360743632" size="0.005"/>
+     <site name="pull-femur-4-left" pos="-0.0522999999999995 0.0121753747854471 -0.107746015703372" size="0.005"/>
+     <site name="pull-femur-1-left" pos="0.0223000000000005 0.07027841608051741 -0.11799475099878301" size="0.005"/>
+    </body>
+    
+            
+   </body>
+   
+        
+  </body>
+  
+        
+  <body name="RLEG_HIP_JM_YAW_LINK" pos="0 -0.074848 -0.174">
+   
+            
+   <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+   
+            
+   <joint axis="0 0 1" damping="0.2" limited="true" name="RLEG_HIP_JOINT_Y" pos="0 0 0" range="-1.39626 1.39626"/>
+   
+            
+   <geom mesh="RLEG_HIP_JM_YAW_LINK_mesh" pos="0 -0.074848 -0.174" type="mesh"/>
+   
+            
+   <body name="RLEG_HIP_JM_ROLL_LINK" pos="0 0 0">
+    
+                
+    <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+    
+                
+    <joint axis="1 0 0" damping="0.2" limited="true" name="RLEG_HIP_JOINT_R" pos="0 0 0" range="-0.698132 0.523599"/>
+    
+                
+    <geom mesh="RLEG_HIP_JM_ROLL_LINK_mesh" type="mesh"/>
+    
+                
+    <body name="RLEG_FEMUR_LINK" pos="0 0 0">
+     
+                    
+     <inertial diaginertia="1 1 1" mass="2.19" pos="0.024 0.0021 -0.135"/>
+     
+                    
+     <joint axis="0 0.765921 0.642934" damping="0.2" limited="true" name="RLEG_HIP_JOINT_P" pos="0 0 0" range="-1.5708 1.5708"/>
+     
+                    
+     <geom mesh="RLEG_FEMUR_LINK_mesh" type="mesh"/>
+     
+                    
+     <body name="RLEG_KNEE_JM_PITCH_LINK" pos="-0.003864 -0.001455 -0.387444">
+      
+                        
+      <inertial diaginertia="1 1 1" mass="0.72" pos="-0.008065 0 -0.146065"/>
+      
+                        
+      <joint axis="0 1 0" damping="0.2" limited="true" name="RLEG_KNEE_JOINT_P" pos="0 0 0" range="0 1.5708"/>
+      
+                        
+      <geom mesh="RLEG_KNEE_JM_PITCH_LINK_mesh" pos="-0.003864 -0.001455 -0.387444" type="mesh"/>
+      
+                        
+      <body name="RLEG_TIBIA_LINK" pos="0 0 0">
+       
+                            
+       <inertial diaginertia="1 1 1" mass="0.75" pos="-0.003285 0 -0.13898"/>
+       
+                            
+       <joint axis="0.104591 0 0.994515" damping="0.2" limited="true" name="RLEG_KNEE_JOINT_Y" pos="0 0 0" range="-0.698132 0.523599"/>
+       
+                            
+       <geom mesh="RLEG_TIBIA_LINK_mesh" type="mesh"/>
+       
+                            
+       <body name="RLEG_ANKLE_JM_PITCH_LINK" pos="0 0 -0.396">
+        
+                                
+        <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+        
+                                
+        <joint axis="0 1 0" damping="0.2" limited="true" name="RLEG_ANKLE_JOINT_P" pos="0 0 0" range="-1.309 1.309"/>
+        
+                                
+        <geom mesh="RLEG_ANKLE_JM_PITCH_LINK_mesh" pos="0 0 -0.396" type="mesh"/>
+        
+                                
+        <body name="RLEG_FOOT_LINK" pos="0 0 0">
+         
+                                    
+         <inertial diaginertia="2.00056 2.00056 2" mass="0.941717" pos="0.0224421 -0.000121798 -0.025241" quat="0.00654824 0.553576 -0.00985016 0.832715"/>
+         
+                                    
+         <joint axis="1 0 0" damping="0.2" limited="true" name="RLEG_ANKLE_JOINT_R" pos="0 0 0" range="-1.309 1.309"/>
+         
+                                    
+         <geom mesh="RLEG_FOOT_LINK_mesh" type="mesh"/>
+         
+                                    
+         <geom mesh="RLEG_HEEL_LINK_mesh" pos="-0.012 0 -0.085" type="mesh"/>
+         
+                                    
+         <body name="RLEG_TOE_LINK" pos="0.1195 0 -0.0455">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.368967" pos="0.024319 -0.000124 -0.006775"/>
+          
+                                        
+          <joint axis="0 1 0" damping="0.2" limited="true" name="RLEG_TOE_JOINT_P" pos="0 0 0" range="-1.5708 0"/>
+          
+                                        
+          <geom mesh="RLEG_TOE_LINK_mesh" pos="0.1195 0 -0.0455" type="mesh"/>
+          
+                                    
+          <site name="pulled-tibia-1-right" pos="0.0065 -0.0 0.013" size="0.005"/>
+          <site name="pulled-tibia-4-right" pos="-0.008 -0.0 -0.0165" size="0.005"/>
+         </body>
+         
+                                
+         <site name="pulled-tibia-6-right" pos="0.005 -0.0315 -0.0535" size="0.005"/>
+         <site name="pulled-tibia-2-right" pos="0.0545 -3.44970957161639e-12 0.00396" size="0.005"/>
+         <site name="via-tibia-1-2-right" pos="0.101956 -0.0 -0.031407" size="0.005"/>
+         <site name="via-tibia-1-1-right" pos="0.0405 -0.0 0.00346" size="0.005"/>
+         <site name="via-tibia-4-1-right" pos="-0.004 0.028 -0.056" size="0.005"/>
+         <site name="via-tibia-4-2-right" pos="-0.004 0.028 -0.0615" size="0.005"/>
+         <site name="via-tibia-4-3-right" pos="0.0 -0.0 -0.0615" size="0.005"/>
+         <site name="pulled-tibia-3-right" pos="0.005 0.0315 -0.0535" size="0.005"/>
+         <site name="pulled-tibia-5-right" pos="-0.0485 -0.0 -0.01" size="0.005"/>
+         <site name="via-tibia-4-4-right" pos="0.0205 -0.0 -0.0615" size="0.005"/>
+        </body>
+        
+                            
+       </body>
+       
+                        
+       <site name="pull-tibia-6-right" pos="-0.0253000000000024 -0.0294999999965504 -0.218506285428355" size="0.005"/>
+       <site name="pulled-femur-2-right" pos="0.0195 -3.44969695723502e-12 -0.056" size="0.005"/>
+       <site name="pulled-pelvis-4-right" pos="0.0195 -3.44969695723502e-12 -0.056" size="0.005"/>
+       <site name="pull-tibia-3-right" pos="0.0222999999999983 0.0294999999965507 -0.218506285428355" size="0.005"/>
+       <site name="pull-tibia-2-right" pos="0.052799999999997606 -3.44992222532126e-12 -0.251506285428355" size="0.005"/>
+       <site name="pulled-femur-5-right" pos="-0.0195 -3.4496968486720903e-12 -0.056" size="0.005"/>
+       <site name="pull-tibia-4-right" pos="-0.0523000000000017 0.0294999999965507 -0.218506285428355" size="0.005"/>
+       <site name="pull-tibia-1-right" pos="0.0493000000723021 -0.0294999999965491 -0.218506285428354" size="0.005"/>
+       <site name="pull-tibia-5-right" pos="-0.0533000000723059 -3.4499223338842e-12 -0.251506285428355" size="0.005"/>
+      </body>
+      
+                    
+     </body>
+     
+                
+     <site name="pull-femur-3-right" pos="0.0233000000000005 -0.0121753747854482 -0.107746015703373" size="0.005"/>
+     <site name="pull-femur-6-right" pos="-0.0532999999999995 -0.07027841608051849 -0.117994750998784" size="0.005"/>
+     <site name="pull-femur-2-right" pos="0.053436208092635294 -0.008094455510015839 -0.304189360743632" size="0.005"/>
+     <site name="pulled-pelvis-3-right" pos="-0.000499999999999539 -0.005476332770804 -0.0996680070247287" size="0.005"/>
+     <site name="pull-femur-5-right" pos="-0.0531637919073647 -0.00809445551001695 -0.304189360743632" size="0.005"/>
+     <site name="pull-femur-4-right" pos="-0.0522999999999995 -0.0121753747854471 -0.107746015703372" size="0.005"/>
+     <site name="pull-femur-1-right" pos="0.0223000000000005 -0.07027841608051741 -0.11799475099878301" size="0.005"/>
+    </body>
+    
+            
+   </body>
+   
+        
+  </body>
+  
+        
+  <body name="SPINE_JM_PITCH_LINK" pos="0 0 0">
+   
+            
+   <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+   
+            
+   <joint axis="0 1 0" damping="0.2" limited="true" name="SPINE_JOINT_P" pos="0 0 0" range="-0.523599 0.698132"/>
+   
+            
+   <geom mesh="SPINE_JM_PITCH_LINK_mesh" type="mesh"/>
+   
+            
+   <body name="SPINE_JM_ROLL_LINK" pos="0 0 0">
+    
+                
+    <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+    
+                
+    <joint axis="1 0 0" damping="0.2" limited="true" name="SPINE_JOINT_R" pos="0 0 0" range="-0.523599 0.523599"/>
+    
+                
+    <geom mesh="SPINE_JM_ROLL_LINK_mesh" type="mesh"/>
+    
+                
+    <body name="CHEST_LINK" pos="0 0 0">
+     
+                    
+     <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+     
+                    
+     <joint axis="0 0 1" damping="0.2" limited="true" name="SPINE_JOINT_Y" pos="0 0 0" range="-0.785398 0.785398"/>
+     
+                    
+     <geom mesh="CHEST_LINK_mesh" type="mesh"/>
+     
+                    
+     <body name="LARM_HUMERUS_DUMMY1_LINK" pos="0 0.178 0.231445">
+      
+                        
+      <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+      
+                        
+      <joint axis="0 1 0" damping="0.2" limited="true" name="LARM_SHOULDER_JOINT_P" pos="0 0 0" range="-2.0944 0.785399"/>
+      
+                        
+      <geom mesh="LARM_HUMERUS_DUMMY1_LINK_mesh" pos="0 0.178 0.231445" type="mesh"/>
+      
+                        
+      <body name="LARM_HUMERUS_DUMMY2_LINK" pos="0 0.039 0">
+       
+                            
+       <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+       
+                            
+       <joint axis="1 0 0" damping="0.2" limited="true" name="LARM_SHOULDER_JOINT_R" pos="0 0 0" range="-0.523599 2.0944"/>
+       
+                            
+       <geom mesh="LARM_HUMERUS_DUMMY2_LINK_mesh" pos="0 0.039 0" type="mesh"/>
+       
+                            
+       <body name="LARM_HUMERUS_LINK" pos="0 0 -0.073">
+        
+                                
+        <inertial diaginertia="1 1 1" mass="2.19" pos="0.024 0.0021 -0.135"/>
+        
+                                
+        <joint axis="0 0 1" damping="0.2" limited="true" name="LARM_SHOULDER_JOINT_Y" pos="0 0 0" range="-1.5708 1.5708"/>
+        
+                                
+        <geom mesh="LARM_HUMERUS_LINK_mesh" pos="0 0 -0.073" type="mesh"/>
+        
+                                
+        <body name="LARM_FOREARM_DUMMY1_LINK" pos="0.004 0 -0.231">
+         
+                                    
+         <inertial diaginertia="1 1 1" mass="0.72" pos="-0.008065 0 -0.146065"/>
+         
+                                    
+         <joint axis="0 1 0" damping="0.2" limited="true" name="LARM_ELBOW_JOINT_P" pos="0 0 0" range="-2.3562 0"/>
+         
+                                    
+         <geom mesh="LARM_FOREARM_DUMMY1_LINK_mesh" pos="0.004 0 -0.231" type="mesh"/>
+         
+                                    
+         <body name="LARM_FOREARM_LINK" pos="0 0 -0.04">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.75" pos="-0.003285 0 -0.13898"/>
+          
+                                        
+          <joint axis="0.104591 0 0.994515" damping="0.2" limited="true" name="LARM_ELBOW_JOINT_Y" pos="0 0 0" range="-1.5708 1.5708"/>
+          
+                                        
+          <geom mesh="LARM_FOREARM_LINK_mesh" pos="0 0 -0.04" type="mesh"/>
+          
+                                        
+          <body name="LARM_HAND_DUMMY1_LINK" pos="0 0 -0.191">
+           
+                                            
+           <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+           
+                                            
+           <joint axis="0 1 0" damping="0.2" limited="true" name="LARM_WRIST_JOINT_P" pos="0 0 0" range="-0.7854 0.7854"/>
+           
+                                            
+           <geom mesh="LARM_HAND_DUMMY1_LINK_mesh" pos="0 0 -0.191" type="mesh"/>
+           
+                                            
+           <body name="LARM_HAND_LINK" pos="0 0 0">
+            
+                                                
+            <inertial diaginertia="1 1 1" mass="0.192" pos="0.01125 0 -0.03"/>
+            
+                                                
+            <joint axis="1 0 0" damping="0.2" limited="true" name="LARM_WRIST_JOINT_R" pos="0 0 0" range="-0.7854 0.7854"/>
+            
+                                                
+            <geom mesh="LARM_HAND_LINK_mesh" type="mesh"/>
+            
+                                                
+            <body name="LARM_INDEX3_LINK" pos="0.0349544 -0.017 -0.100974">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="LARM_INDEX3_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+             
+                                                    
+             <geom mesh="LARM_INDEX3_LINK_mesh" pos="0.0349544 -0.017 -0.100974" type="mesh"/>
+             
+                                                    
+             <body name="LARM_INDEX2_LINK" pos="0.00348623 0 -0.0398478">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="LARM_INDEX2_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+              
+                                                        
+              <geom mesh="LARM_INDEX2_LINK_mesh" pos="0.00348623 0 -0.0398478" type="mesh"/>
+              
+                                                        
+              <body name="LARM_INDEX1_LINK" pos="0.00261467 0 -0.0298858">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="LARM_INDEX1_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+               
+                                                            
+               <geom mesh="LARM_INDEX1_LINK_mesh" pos="0.00261467 0 -0.0298858" type="mesh"/>
+               
+                                                        
+               <site name="pulled-forearm-3-left" pos="0.00143809543398946 -0.01 -0.0164370715176251" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="via-forearm-3-5-left" pos="0.00108947246299876 -0.00599999999999955 -0.0124522927252581" size="0.005"/>
+              <site name="via-forearm-3-6-left" pos="0.00187387414772767 -0.00599999999999955 -0.0214180450080838" size="0.005"/>
+             </body>
+             
+                                                
+             <site name="via-forearm-3-3-left" pos="0.00100231672025112 -0.00599999999999955 -0.011456098027166399" size="0.005"/>
+             <site name="via-forearm-3-4-left" pos="0.00265827583245663 -0.00599999999999955 -0.030383797290909603" size="0.005"/>
+            </body>
+            
+                                                
+            <body name="LARM_LITTLE3_LINK" pos="-0.0273876 -0.017 -0.098252">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="LARM_LITTLE3_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+             
+                                                    
+             <geom mesh="LARM_LITTLE3_LINK_mesh" pos="-0.0273876 -0.017 -0.098252" type="mesh"/>
+             
+                                                    
+             <body name="LARM_LITTLE2_LINK" pos="-0.00520945 0 -0.0295442">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="LARM_LITTLE2_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+              
+                                                        
+              <geom mesh="LARM_LITTLE2_LINK_mesh" pos="-0.00520945 0 -0.0295442" type="mesh"/>
+              
+                                                        
+              <body name="LARM_LITTLE1_LINK" pos="-0.00520945 0 -0.0295442">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="LARM_LITTLE1_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+               
+                                                            
+               <geom mesh="LARM_LITTLE1_LINK_mesh" pos="-0.00520945 0 -0.0295442" type="mesh"/>
+               
+                                                        
+              </body>
+              
+                                                    
+             </body>
+             
+                                                
+            </body>
+            
+                                                
+            <body name="LARM_MIDDLE3_LINK" pos="0.0141209 -0.017 -0.101883">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="1 0 0" damping="0.2" limited="true" name="LARM_MIDDLE3_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+             
+                                                    
+             <geom mesh="LARM_MIDDLE3_LINK_mesh" pos="0.0141209 -0.017 -0.101883" type="mesh"/>
+             
+                                                    
+             <body name="LARM_MIDDLE2_LINK" pos="0 0 -0.04">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="1 0 0" damping="0.2" limited="true" name="LARM_MIDDLE2_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+              
+                                                        
+              <geom mesh="LARM_MIDDLE2_LINK_mesh" pos="0 0 -0.04" type="mesh"/>
+              
+                                                        
+              <body name="LARM_MIDDLE1_LINK" pos="0 0 -0.03">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="1 0 0" damping="0.2" limited="true" name="LARM_MIDDLE1_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+               
+                                                            
+               <geom mesh="LARM_MIDDLE1_LINK_mesh" pos="0 0 -0.03" type="mesh"/>
+               
+                                                        
+              </body>
+              
+                                                    
+             </body>
+             
+                                                
+            </body>
+            
+                                                
+            <body name="LARM_RING3_LINK" pos="-0.00671263 -0.017 -0.100974">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="LARM_RING3_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+             
+                                                    
+             <geom mesh="LARM_RING3_LINK_mesh" pos="-0.00671263 -0.017 -0.100974" type="mesh"/>
+             
+                                                    
+             <body name="LARM_RING2_LINK" pos="-0.00348623 0 -0.0398478">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="LARM_RING2_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+              
+                                                        
+              <geom mesh="LARM_RING2_LINK_mesh" pos="-0.00348623 0 -0.0398478" type="mesh"/>
+              
+                                                        
+              <body name="LARM_RING1_LINK" pos="-0.00261467 0 -0.0298858">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="LARM_RING1_JOINT_R" pos="0 0 0" range="-1.5708 0"/>
+               
+                                                            
+               <geom mesh="LARM_RING1_LINK_mesh" pos="-0.00261467 0 -0.0298858" type="mesh"/>
+               
+                                                        
+               <site name="pulled-forearm-6-left" pos="-0.00143807289347136 -0.01 -0.0164370715176251" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="via-forearm-6-6-left" pos="-0.00187385160720972 -0.00599999999999955 -0.0214180450080838" size="0.005"/>
+              <site name="via-forearm-6-5-left" pos="-0.00108944992248079 -0.00599999999999955 -0.0124522927252581" size="0.005"/>
+             </body>
+             
+                                                
+             <site name="via-forearm-6-4-left" pos="-0.00265825329193862 -0.00599999999999955 -0.030383797290909603" size="0.005"/>
+             <site name="via-forearm-6-3-left" pos="-0.00100229417973312 -0.00599999999999955 -0.011456098027166399" size="0.005"/>
+            </body>
+            
+                                                
+            <body name="LARM_THUMB4_LINK" pos="0.0299678 -0.006 -0.0497134">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="-0.0871557 0 0.996195" damping="0.2" limited="true" name="LARM_THUMB4_JOINT_Y" pos="0 0 0" range="-2.09439 0"/>
+             
+                                                    
+             <geom mesh="LARM_THUMB4_LINK_mesh" pos="0.0299678 -0.006 -0.0497134" type="mesh"/>
+             
+                                                    
+             <body name="LARM_THUMB3_LINK" pos="0 0 0">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0 1 0" damping="0.2" limited="true" name="LARM_THUMB3_JOINT_Y" pos="0 0 0" range="0 0.872664"/>
+              
+                                                        
+              <geom mesh="LARM_THUMB3_LINK_mesh" type="mesh"/>
+              
+                                                        
+              <body name="LARM_THUMB2_LINK" pos="0.0360228 -0.011 -0.0109274">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.405582 -0.70711 0.579223" damping="0.2" limited="true" name="LARM_THUMB2_JOINT_Y" pos="0 0 0" range="-1.5708 0"/>
+               
+                                                            
+               <geom mesh="LARM_THUMB2_LINK_mesh" pos="0.0360228 -0.011 -0.0109274" type="mesh"/>
+               
+                                                            
+               <body name="LARM_THUMB1_LINK" pos="0.0245746 0 -0.0172073">
+                
+                                                                
+                <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+                
+                                                                
+                <joint axis="0.405582 -0.70711 0.579223" damping="0.2" limited="true" name="LARM_THUMB1_JOINT_Y" pos="0 0 0" range="-1.5708 0"/>
+                
+                                                                
+                <geom mesh="LARM_THUMB1_LINK_mesh" pos="0.0245746 0 -0.0172073" type="mesh"/>
+                
+                                                            
+                <site name="pulled-forearm-5-left" pos="0.0104348212855471 -0.006000015 -0.0101519215095413" size="0.005"/>
+               </body>
+               
+                                                        
+               <site name="via-forearm-5-6-left" pos="0.0151743798552749 -0.004242655687119399 -0.0120525335003073" size="0.005"/>
+               <site name="via-forearm-5-5-left" pos="0.00780201145667398 -0.004242655687119371 -0.00689034557314787" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="pulled-forearm-4-left" pos="0.0210322212855471 -0.0049618971736034604 -0.00128662650954127" size="0.005"/>
+              <site name="via-forearm-5-3-left" pos="0.010829793694624099 -0.0152426406871193 -0.00331139728786786" size="0.005"/>
+              <site name="via-forearm-5-4-left" pos="0.019795545977449803 -0.0152426406871193 -0.00252699560313894" size="0.005"/>
+             </body>
+             
+                                                
+            </body>
+            
+                                            
+            <site name="via-forearm-5-1-left" pos="-0.00800000000071459 -0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-5-2-left" pos="-0.0060000000007145995 -0.023 -0.057" size="0.005"/>
+            <site name="via-forearm-4-2-left" pos="0.0209999999992854 -0.023 -0.085" size="0.005"/>
+            <site name="pulled-forearm-1-left" pos="0.0249999999992854 0.011 -0.04" size="0.005"/>
+            <site name="pulled-forearm-2-left" pos="0.0229999999992854 -0.022 -0.023" size="0.005"/>
+            <site name="via-forearm-4-1-left" pos="-0.0060000000007145995 -0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-6-1-left" pos="-0.0130000000007146 -0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-6-2-left" pos="-0.00579749783928461 -0.022499999999999302 -0.09051381466914811" size="0.005"/>
+            <site name="via-forearm-3-1-left" pos="0.000999999999285406 -0.024 -0.038" size="0.005"/>
+            <site name="pulled-forearm-8-left" pos="0.0039999999992854 0.021 -0.078" size="0.005"/>
+            <site name="via-forearm-3-2-left" pos="0.0340392403798027 -0.0224999999999991 -0.090513814669148" size="0.005"/>
+            <site name="pulled-forearm-7-left" pos="-0.0260000000007146 0.008 -0.04" size="0.005"/>
+           </body>
+           
+                                        
+          </body>
+          
+                                    
+          <site name="pull-forearm-1-left" pos="0.029999999997142 0.0239971203378614 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-1-3-left" pos="0.0272 0.0044 -0.0108" size="0.005"/>
+          <site name="pull-forearm-8-left" pos="-0.00800000000285838 0.03 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-7-left" pos="-0.024000000002858398 0.03 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-3-3-left" pos="0.0272 -0.0056 -0.0108" size="0.005"/>
+          <site name="pull-forearm-6-left" pos="-0.0300000000028584 -0.008 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-5-1-left" pos="-0.0008 0.0395 -0.0108" size="0.005"/>
+          <site name="pull-forearm-5-left" pos="-0.0300000000028584 -0.024 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-4-1-left" pos="0.0 -0.032 -0.0108" size="0.005"/>
+          <site name="pull-forearm-2-left" pos="0.029999999997142 0.00799712033786145 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-3-left" pos="0.023999999997142002 -0.0300028796621386 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-4-left" pos="0.00799999999714196 -0.0300028796621385 -0.132999999999999" size="0.005"/>
+         </body>
+         
+                                
+         <site name="via-humerus-1-5-left" pos="-0.024 0.003 0.0272" size="0.005"/>
+         <site name="via-humerus-1-4-left" pos="-0.006 0.0233 -0.027800000000000002" size="0.005"/>
+         <site name="via-humerus-1-2-left" pos="-0.006 0.023 -0.0338" size="0.005"/>
+         <site name="via-humerus-1-1-left" pos="-0.027 0.003 0.0232" size="0.005"/>
+         <site name="via-humerus-3-1-left" pos="-0.027 -0.003 0.0232" size="0.005"/>
+         <site name="via-humerus-3-2-left" pos="-0.006 -0.023 -0.0338" size="0.005"/>
+         <site name="via-humerus-3-4-left" pos="-0.006 -0.0237 -0.0288" size="0.005"/>
+         <site name="via-humerus-3-5-left" pos="-0.024 0.003 0.0272" size="0.005"/>
+        </body>
+        
+                            
+        <site name="via-scapula-5-1-left" pos="-0.0105 -0.0185 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-5-left" pos="0.012 -0.0375 -0.1455" size="0.005"/>
+        <site name="via-scapula-2-2-left" pos="-0.029 0.012 -0.0195" size="0.005"/>
+        <site name="via-scapula-1-2-left" pos="0.0105 0.018 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-3-left" pos="-0.041 0.0385 -0.1455" size="0.005"/>
+        <site name="pull-humerus-4-left" pos="0.0238 0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-3-left" pos="-0.0518 0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-5-left" pos="0.0238 -0.0305 -0.1415" size="0.005"/>
+        <site name="via-scapula-3-2-left" pos="0.0105 -0.0185 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-2-left" pos="-0.041000000002863204 0.00725598479111878 -0.022500000000007302" size="0.005"/>
+        <site name="pull-humerus-1-left" pos="-0.0518 -0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-2-left" pos="-0.0533 0.0 -0.0268" size="0.005"/>
+        <site name="via-scapula-4-1-left" pos="0.01755 0.0 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-1-left" pos="-0.039 -0.0385 -0.1455" size="0.005"/>
+       </body>
+       
+                        
+       <site name="via-scapula-4-2-left" pos="0.0 -0.025 -0.032310000000000005" size="0.005"/>
+       <site name="via-scapula-5-2-left" pos="0.0 -0.025 -0.032310000000000005" size="0.005"/>
+      </body>
+      
+                    
+     </body>
+     
+                    
+     <body name="NECK_JM_PITCH_LINK" pos="0 0 0.322">
+      
+                        
+      <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+      
+                        
+      <joint axis="0 1 0" damping="0.2" limited="true" name="NECK_JOINT_P" pos="0 0 0" range="-1.13446 0.785398"/>
+      
+                        
+      <geom mesh="NECK_JM_PITCH_LINK_mesh" pos="0 0 0.322" type="mesh"/>
+      
+                        
+      <body name="NECK_JM_ROLL_LINK" pos="0 0 0">
+       
+                            
+       <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+       
+                            
+       <joint axis="1 0 0" damping="0.2" limited="true" name="NECK_JOINT_R" pos="0 0 0" range="-0.785398 0.785398"/>
+       
+                            
+       <geom mesh="NECK_JM_ROLL_LINK_mesh" type="mesh"/>
+       
+                            
+       <body name="HEAD_LINK" pos="0 0 0">
+        
+                                
+        <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+        
+                                
+        <joint axis="0 0 1" damping="0.2" limited="true" name="NECK_JOINT_Y" pos="0 0 0" range="-1.5708 1.5708"/>
+        
+                                
+        <geom mesh="HEAD_LINK_mesh" type="mesh"/>
+        
+                                
+        <body name="EYE_DUMMY1_LINK" pos="0.068814 0 0.134">
+         
+                                    
+         <inertial diaginertia="1 1 1" mass="2.12" pos="-0.00188 0 0.0746"/>
+         
+                                    
+         <joint axis="0 1 0" damping="0.2" limited="true" name="EYE_JOINT_P" pos="0 0 0" range="-3.49065 1.0472"/>
+         
+                                    
+         <geom mesh="EYE_DUMMY1_LINK_mesh" pos="0.068814 0 0.134" type="mesh"/>
+         
+                                    
+         <body name="LEYE_LINK" pos="0 0.04 0">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.1" pos="-0.00188 0 0.0746"/>
+          
+                                        
+          <joint axis="0 0 1" damping="0.2" limited="true" name="LEYE_JOINT_Y" pos="0 0 0" range="-3.83972 3.66519"/>
+          
+                                        
+          <geom mesh="LEYE_LINK_mesh" pos="0 0.04 0" type="mesh"/>
+          
+                                    
+         </body>
+         
+                                    
+         <body name="REYE_LINK" pos="0 -0.04 0">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.1" pos="-0.00188 0 0.0746"/>
+          
+                                        
+          <joint axis="0 0 1" damping="0.2" limited="true" name="REYE_JOINT_Y" pos="0 0 0" range="-3.83972 3.66519"/>
+          
+                                        
+          <geom mesh="REYE_LINK_mesh" pos="0 -0.04 0" type="mesh"/>
+          
+                                    
+         </body>
+         
+                                
+        </body>
+        
+                            
+        <site name="pull-head-2-left" pos="-0.0624999999999999 0.025000000003449402 0.0875" size="0.005"/>
+        <site name="pull-head-2-right" pos="-0.0624999999999999 -0.025000000003449402 0.0875" size="0.005"/>
+        <site name="via-head-2-1-left" pos="-0.059 0.041 0.07280142202" size="0.005"/>
+        <site name="via-head-2-1-right" pos="-0.059 -0.041 0.07280142202" size="0.005"/>
+        <site name="pull-head-1-left" pos="-0.0672999999999998 3.44995750827452e-12 0.087992009069214" size="0.005"/>
+        <site name="pull-head-1-right" pos="-0.0672999999999998 -3.44995750827452e-12 0.087992009069214" size="0.005"/>
+        <site name="pull-head-3-left" pos="-0.0404999999999999 0.0610000000034497 0.0875" size="0.005"/>
+        <site name="pull-head-3-right" pos="-0.0404999999999999 -0.0610000000034497 0.0875" size="0.005"/>
+        <site name="via-chest-1-2-left" pos="0.031 -0.0149999999965503 0.0859999999999999" size="0.005"/>
+        <site name="via-chest-1-2-right" pos="0.031 0.0149999999965503 0.0859999999999999" size="0.005"/>
+       </body>
+       
+                        
+       <site name="via-chest-1-1-left" pos="0.0314999999999999 3.4495732497727298e-12 -1.18262356464734e-19" size="0.005"/>
+       <site name="via-chest-1-1-right" pos="0.0314999999999999 -3.4495732497727298e-12 -1.18262356464734e-19" size="0.005"/>
+       <site name="via-head-1-left" pos="-0.0315 3.44957238126926e-12 -7.696399552265839e-19" size="0.005"/>
+       <site name="via-head-1-right" pos="-0.0315 -3.44957238126926e-12 -7.696399552265839e-19" size="0.005"/>
+       <site name="pulled-head-2-left" pos="0.0179999999999999 3.44969717436089e-12 0.0575" size="0.005"/>
+       <site name="pulled-head-2-right" pos="0.0179999999999999 -3.44969717436089e-12 0.0575" size="0.005"/>
+       <site name="via-chest-1-3-left" pos="0.0314999999999999 3.4495732497727298e-12 -1.18262356464734e-19" size="0.005"/>
+       <site name="via-chest-1-3-right" pos="0.0314999999999999 -3.4495732497727298e-12 -1.18262356464734e-19" size="0.005"/>
+       <site name="via-head-2-2-left" pos="0.0053 0.02 0.0575" size="0.005"/>
+       <site name="via-head-2-2-right" pos="0.0053 -0.02 0.0575" size="0.005"/>
+      </body>
+      
+                    
+     </body>
+     
+                    
+     <body name="RARM_HUMERUS_DUMMY1_LINK" pos="0 -0.178 0.231445">
+      
+                        
+      <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+      
+                        
+      <joint axis="0 1 0" damping="0.2" limited="true" name="RARM_SHOULDER_JOINT_P" pos="0 0 0" range="-2.0944 0.785399"/>
+      
+                        
+      <geom mesh="RARM_HUMERUS_DUMMY1_LINK_mesh" pos="0 -0.178 0.231445" type="mesh"/>
+      
+                        
+      <body name="RARM_HUMERUS_DUMMY2_LINK" pos="0 -0.039 0">
+       
+                            
+       <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+       
+                            
+       <joint axis="1 0 0" damping="0.2" limited="true" name="RARM_SHOULDER_JOINT_R" pos="0 0 0" range="-2.0944 0.523599"/>
+       
+                            
+       <geom mesh="RARM_HUMERUS_DUMMY2_LINK_mesh" pos="0 -0.039 0" type="mesh"/>
+       
+                            
+       <body name="RARM_HUMERUS_LINK" pos="0 0 -0.073">
+        
+                                
+        <inertial diaginertia="1 1 1" mass="2.19" pos="0.024 0.0021 -0.135"/>
+        
+                                
+        <joint axis="0 0 1" damping="0.2" limited="true" name="RARM_SHOULDER_JOINT_Y" pos="0 0 0" range="-1.5708 1.5708"/>
+        
+                                
+        <geom mesh="RARM_HUMERUS_LINK_mesh" pos="0 0 -0.073" type="mesh"/>
+        
+                                
+        <body name="RARM_FOREARM_DUMMY1_LINK" pos="0.004 0 -0.231">
+         
+                                    
+         <inertial diaginertia="1 1 1" mass="0.72" pos="-0.008065 0 -0.146065"/>
+         
+                                    
+         <joint axis="0 1 0" damping="0.2" limited="true" name="RARM_ELBOW_JOINT_P" pos="0 0 0" range="-2.3562 0"/>
+         
+                                    
+         <geom mesh="RARM_FOREARM_DUMMY1_LINK_mesh" pos="0.004 0 -0.231" type="mesh"/>
+         
+                                    
+         <body name="RARM_FOREARM_LINK" pos="0 0 -0.04">
+          
+                                        
+          <inertial diaginertia="1 1 1" mass="0.75" pos="-0.003285 0 -0.13898"/>
+          
+                                        
+          <joint axis="0.104591 0 0.994515" damping="0.2" limited="true" name="RARM_ELBOW_JOINT_Y" pos="0 0 0" range="-1.5708 1.5708"/>
+          
+                                        
+          <geom mesh="RARM_FOREARM_LINK_mesh" pos="0 0 -0.04" type="mesh"/>
+          
+                                        
+          <body name="RARM_HAND_DUMMY1_LINK" pos="0 0 -0.191">
+           
+                                            
+           <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+           
+                                            
+           <joint axis="0 1 0" damping="0.2" limited="true" name="RARM_WRIST_JOINT_P" pos="0 0 0" range="-0.7854 0.7854"/>
+           
+                                            
+           <geom mesh="RARM_HAND_DUMMY1_LINK_mesh" pos="0 0 -0.191" type="mesh"/>
+           
+                                            
+           <body name="RARM_HAND_LINK" pos="0 0 0">
+            
+                                                
+            <inertial diaginertia="1 1 1" mass="0.192" pos="0.01125 0 -0.03"/>
+            
+                                                
+            <joint axis="1 0 0" damping="0.2" limited="true" name="RARM_WRIST_JOINT_R" pos="0 0 0" range="-0.7854 0.7854"/>
+            
+                                                
+            <geom mesh="RARM_HAND_LINK_mesh" type="mesh"/>
+            
+                                                
+            <body name="RARM_INDEX3_LINK" pos="0.0349544 0.017 -0.100974">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="RARM_INDEX3_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+             
+                                                    
+             <geom mesh="RARM_INDEX3_LINK_mesh" pos="0.0349544 0.017 -0.100974" type="mesh"/>
+             
+                                                    
+             <body name="RARM_INDEX2_LINK" pos="0.00348623 0 -0.0398478">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="RARM_INDEX2_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+              
+                                                        
+              <geom mesh="RARM_INDEX2_LINK_mesh" pos="0.00348623 0 -0.0398478" type="mesh"/>
+              
+                                                        
+              <body name="RARM_INDEX1_LINK" pos="0.00261467 0 -0.0298858">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.996195 0 0.0871557" damping="0.2" limited="true" name="RARM_INDEX1_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+               
+                                                            
+               <geom mesh="RARM_INDEX1_LINK_mesh" pos="0.00261467 0 -0.0298858" type="mesh"/>
+               
+                                                        
+               <site name="pulled-forearm-3-right" pos="0.00143809543398946 0.01 -0.0164370715176251" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="via-forearm-3-5-right" pos="0.00108947246299876 0.00599999999999955 -0.0124522927252581" size="0.005"/>
+              <site name="via-forearm-3-6-right" pos="0.00187387414772767 0.00599999999999955 -0.0214180450080838" size="0.005"/>
+             </body>
+             
+                                                
+             <site name="via-forearm-3-3-right" pos="0.00100231672025112 0.00599999999999955 -0.011456098027166399" size="0.005"/>
+             <site name="via-forearm-3-4-right" pos="0.00265827583245663 0.00599999999999955 -0.030383797290909603" size="0.005"/>
+            </body>
+            
+                                                
+            <body name="RARM_LITTLE3_LINK" pos="-0.0273876 0.017 -0.098252">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="RARM_LITTLE3_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+             
+                                                    
+             <geom mesh="RARM_LITTLE3_LINK_mesh" pos="-0.0273876 0.017 -0.098252" type="mesh"/>
+             
+                                                    
+             <body name="RARM_LITTLE2_LINK" pos="-0.00520945 0 -0.0295442">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="RARM_LITTLE2_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+              
+                                                        
+              <geom mesh="RARM_LITTLE2_LINK_mesh" pos="-0.00520945 0 -0.0295442" type="mesh"/>
+              
+                                                        
+              <body name="RARM_LITTLE1_LINK" pos="-0.00520945 0 -0.0295442">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.984808 0 -0.173648" damping="0.2" limited="true" name="RARM_LITTLE1_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+               
+                                                            
+               <geom mesh="RARM_LITTLE1_LINK_mesh" pos="-0.00520945 0 -0.0295442" type="mesh"/>
+               
+                                                        
+              </body>
+              
+                                                    
+             </body>
+             
+                                                
+            </body>
+            
+                                                
+            <body name="RARM_MIDDLE3_LINK" pos="0.0141209 0.017 -0.101883">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="1 0 0" damping="0.2" limited="true" name="RARM_MIDDLE3_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+             
+                                                    
+             <geom mesh="RARM_MIDDLE3_LINK_mesh" pos="0.0141209 0.017 -0.101883" type="mesh"/>
+             
+                                                    
+             <body name="RARM_MIDDLE2_LINK" pos="0 0 -0.04">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="1 0 0" damping="0.2" limited="true" name="RARM_MIDDLE2_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+              
+                                                        
+              <geom mesh="RARM_MIDDLE2_LINK_mesh" pos="0 0 -0.04" type="mesh"/>
+              
+                                                        
+              <body name="RARM_MIDDLE1_LINK" pos="0 0 -0.03">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="1 0 0" damping="0.2" limited="true" name="RARM_MIDDLE1_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+               
+                                                            
+               <geom mesh="RARM_MIDDLE1_LINK_mesh" pos="0 0 -0.03" type="mesh"/>
+               
+                                                        
+              </body>
+              
+                                                    
+             </body>
+             
+                                                
+            </body>
+            
+                                                
+            <body name="RARM_RING3_LINK" pos="-0.00671263 0.017 -0.100974">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="RARM_RING3_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+             
+                                                    
+             <geom mesh="RARM_RING3_LINK_mesh" pos="-0.00671263 0.017 -0.100974" type="mesh"/>
+             
+                                                    
+             <body name="RARM_RING2_LINK" pos="-0.00348623 0 -0.0398478">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="RARM_RING2_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+              
+                                                        
+              <geom mesh="RARM_RING2_LINK_mesh" pos="-0.00348623 0 -0.0398478" type="mesh"/>
+              
+                                                        
+              <body name="RARM_RING1_LINK" pos="-0.00261467 0 -0.0298858">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.996195 0 -0.0871557" damping="0.2" limited="true" name="RARM_RING1_JOINT_R" pos="0 0 0" range="0 1.5708"/>
+               
+                                                            
+               <geom mesh="RARM_RING1_LINK_mesh" pos="-0.00261467 0 -0.0298858" type="mesh"/>
+               
+                                                        
+               <site name="pulled-forearm-6-right" pos="-0.00143807289347136 0.01 -0.0164370715176251" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="via-forearm-6-6-right" pos="-0.00187385160720972 0.00599999999999955 -0.0214180450080838" size="0.005"/>
+              <site name="via-forearm-6-5-right" pos="-0.00108944992248079 0.00599999999999955 -0.0124522927252581" size="0.005"/>
+             </body>
+             
+                                                
+             <site name="via-forearm-6-4-right" pos="-0.00265825329193862 0.00599999999999955 -0.030383797290909603" size="0.005"/>
+             <site name="via-forearm-6-3-right" pos="-0.00100229417973312 0.00599999999999955 -0.011456098027166399" size="0.005"/>
+            </body>
+            
+                                                
+            <body name="RARM_THUMB4_LINK" pos="0.0299678 0.006 -0.0497134">
+             
+                                                    
+             <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+             
+                                                    
+             <joint axis="-0.0871557 0 0.996195" damping="0.2" limited="true" name="RARM_THUMB4_JOINT_Y" pos="0 0 0" range="0 2.09439"/>
+             
+                                                    
+             <geom mesh="RARM_THUMB4_LINK_mesh" pos="0.0299678 0.006 -0.0497134" type="mesh"/>
+             
+                                                    
+             <body name="RARM_THUMB3_LINK" pos="0 0 0">
+              
+                                                        
+              <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+              
+                                                        
+              <joint axis="0 1 0" damping="0.2" limited="true" name="RARM_THUMB3_JOINT_Y" pos="0 0 0" range="0 0.872664"/>
+              
+                                                        
+              <geom mesh="RARM_THUMB3_LINK_mesh" type="mesh"/>
+              
+                                                        
+              <body name="RARM_THUMB2_LINK" pos="0.0360228 0.011 -0.0109274">
+               
+                                                            
+               <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+               
+                                                            
+               <joint axis="0.405582 0.70711 0.579223" damping="0.2" limited="true" name="RARM_THUMB2_JOINT_Y" pos="0 0 0" range="0 1.5708"/>
+               
+                                                            
+               <geom mesh="RARM_THUMB2_LINK_mesh" pos="0.0360228 0.011 -0.0109274" type="mesh"/>
+               
+                                                            
+               <body name="RARM_THUMB1_LINK" pos="0.0245746 0 -0.0172073">
+                
+                                                                
+                <inertial diaginertia="1 1 1" mass="0.1" pos="0 0 0"/>
+                
+                                                                
+                <joint axis="0.405582 0.70711 0.579223" damping="0.2" limited="true" name="RARM_THUMB1_JOINT_Y" pos="0 0 0" range="0 1.5708"/>
+                
+                                                                
+                <geom mesh="RARM_THUMB1_LINK_mesh" pos="0.0245746 0 -0.0172073" type="mesh"/>
+                
+                                                            
+                <site name="pulled-forearm-5-right" pos="0.0104348212855471 0.006000015 -0.0101519215095413" size="0.005"/>
+               </body>
+               
+                                                        
+               <site name="via-forearm-5-6-right" pos="0.0151743798552749 0.004242655687119399 -0.0120525335003073" size="0.005"/>
+               <site name="via-forearm-5-5-right" pos="0.00780201145667398 0.004242655687119371 -0.00689034557314787" size="0.005"/>
+              </body>
+              
+                                                    
+              <site name="pulled-forearm-4-right" pos="0.0210322212855471 0.0049618971736034604 -0.00128662650954127" size="0.005"/>
+              <site name="via-forearm-5-3-right" pos="0.010829793694624099 0.0152426406871193 -0.00331139728786786" size="0.005"/>
+              <site name="via-forearm-5-4-right" pos="0.019795545977449803 0.0152426406871193 -0.00252699560313894" size="0.005"/>
+             </body>
+             
+                                                
+            </body>
+            
+                                            
+            <site name="via-forearm-5-1-right" pos="-0.00800000000071459 0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-5-2-right" pos="-0.0060000000007145995 0.023 -0.057" size="0.005"/>
+            <site name="via-forearm-4-2-right" pos="0.0209999999992854 0.023 -0.085" size="0.005"/>
+            <site name="pulled-forearm-1-right" pos="0.0249999999992854 -0.011 -0.04" size="0.005"/>
+            <site name="pulled-forearm-2-right" pos="0.0229999999992854 0.022 -0.023" size="0.005"/>
+            <site name="via-forearm-4-1-right" pos="-0.0060000000007145995 0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-6-1-right" pos="-0.0130000000007146 0.024 -0.038" size="0.005"/>
+            <site name="via-forearm-6-2-right" pos="-0.00579749783928461 0.022499999999999302 -0.09051381466914811" size="0.005"/>
+            <site name="via-forearm-3-1-right" pos="0.000999999999285406 0.024 -0.038" size="0.005"/>
+            <site name="pulled-forearm-8-right" pos="0.0039999999992854 -0.021 -0.078" size="0.005"/>
+            <site name="via-forearm-3-2-right" pos="0.0340392403798027 0.0224999999999991 -0.090513814669148" size="0.005"/>
+            <site name="pulled-forearm-7-right" pos="-0.0260000000007146 -0.008 -0.04" size="0.005"/>
+           </body>
+           
+                                        
+          </body>
+          
+                                    
+          <site name="pull-forearm-1-right" pos="0.029999999997142 -0.0239971203378614 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-1-3-right" pos="0.0272 -0.0044 -0.0108" size="0.005"/>
+          <site name="pull-forearm-8-right" pos="-0.00800000000285838 -0.03 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-7-right" pos="-0.024000000002858398 -0.03 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-3-3-right" pos="0.0272 0.0056 -0.0108" size="0.005"/>
+          <site name="pull-forearm-6-right" pos="-0.0300000000028584 0.008 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-5-1-right" pos="-0.0008 -0.0395 -0.0108" size="0.005"/>
+          <site name="pull-forearm-5-right" pos="-0.0300000000028584 0.024 -0.132999999999999" size="0.005"/>
+          <site name="via-humerus-4-1-right" pos="0.0 0.032 -0.0108" size="0.005"/>
+          <site name="pull-forearm-2-right" pos="0.029999999997142 -0.00799712033786145 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-3-right" pos="0.023999999997142002 0.0300028796621386 -0.132999999999999" size="0.005"/>
+          <site name="pull-forearm-4-right" pos="0.00799999999714196 0.0300028796621385 -0.132999999999999" size="0.005"/>
+         </body>
+         
+                                
+         <site name="via-humerus-1-5-right" pos="-0.024 -0.003 0.0272" size="0.005"/>
+         <site name="via-humerus-1-4-right" pos="-0.006 -0.0233 -0.027800000000000002" size="0.005"/>
+         <site name="via-humerus-1-2-right" pos="-0.006 -0.023 -0.0338" size="0.005"/>
+         <site name="via-humerus-1-1-right" pos="-0.027 -0.003 0.0232" size="0.005"/>
+         <site name="via-humerus-3-1-right" pos="-0.027 0.003 0.0232" size="0.005"/>
+         <site name="via-humerus-3-2-right" pos="-0.006 0.023 -0.0338" size="0.005"/>
+         <site name="via-humerus-3-4-right" pos="-0.006 0.0237 -0.0288" size="0.005"/>
+         <site name="via-humerus-3-5-right" pos="-0.024 -0.003 0.0272" size="0.005"/>
+        </body>
+        
+                            
+        <site name="via-scapula-5-1-right" pos="-0.0105 0.0185 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-5-right" pos="0.012 0.0375 -0.1455" size="0.005"/>
+        <site name="via-scapula-2-2-right" pos="-0.029 -0.012 -0.0195" size="0.005"/>
+        <site name="via-scapula-1-2-right" pos="0.0105 -0.018 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-3-right" pos="-0.041 -0.0385 -0.1455" size="0.005"/>
+        <site name="pull-humerus-4-right" pos="0.0238 -0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-3-right" pos="-0.0518 -0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-5-right" pos="0.0238 0.0305 -0.1415" size="0.005"/>
+        <site name="via-scapula-3-2-right" pos="0.0105 0.0185 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-2-right" pos="-0.041000000002863204 -0.00725598479111878 -0.022500000000007302" size="0.005"/>
+        <site name="pull-humerus-1-right" pos="-0.0518 0.0305 -0.1415" size="0.005"/>
+        <site name="pull-humerus-2-right" pos="-0.0533 -0.0 -0.0268" size="0.005"/>
+        <site name="via-scapula-4-1-right" pos="0.01755 -0.0 -0.0165" size="0.005"/>
+        <site name="pulled-humerus-1-right" pos="-0.039 0.0385 -0.1455" size="0.005"/>
+       </body>
+       
+                        
+       <site name="via-scapula-4-2-right" pos="0.0 0.025 -0.032310000000000005" size="0.005"/>
+       <site name="via-scapula-5-2-right" pos="0.0 0.025 -0.032310000000000005" size="0.005"/>
+      </body>
+      
+                    
+     </body>
+     
+                
+     <site name="pulled-head-3-left" pos="0.047499999999996496 0.16350000000345 0.256444974746761" size="0.005"/>
+     <site name="pulled-head-3-right" pos="0.047499999999996496 -0.16350000000345 0.256444974746761" size="0.005"/>
+     <site name="pulled-head-1-left" pos="-0.0285000000000005 3.4496915833698397e-12 0.229" size="0.005"/>
+     <site name="pulled-head-1-right" pos="-0.0285000000000005 -3.4496915833698397e-12 0.229" size="0.005"/>
+     <site name="pulled-scapula-5-left" pos="0.0474999999971382 0.19549997892999202 0.290429288230654" size="0.005"/>
+     <site name="pulled-scapula-5-right" pos="0.0474999999971382 -0.19549997892999202 0.290429288230654" size="0.005"/>
+     <site name="via-pelvis-2-left" pos="-0.0064999999999995 -0.0184999999965504 0.0965" size="0.005"/>
+     <site name="via-pelvis-2-right" pos="-0.0064999999999995 0.0184999999965504 0.0965" size="0.005"/>
+     <site name="pull-scapula-5-left" pos="0.030500999482936598 0.1415 0.207666766225343" size="0.005"/>
+     <site name="pull-scapula-5-right" pos="0.030500999482936598 -0.1415 0.207666766225343" size="0.005"/>
+     <site name="via-pelvis-1-left" pos="0.0065000000000005 -0.0184999999965504 0.0965" size="0.005"/>
+     <site name="via-pelvis-1-right" pos="0.0065000000000005 0.0184999999965504 0.0965" size="0.005"/>
+     <site name="pulled-scapula-4-left" pos="-0.0475000000028617 0.19549997892999202 0.290429288230394" size="0.005"/>
+     <site name="pulled-scapula-4-right" pos="-0.0475000000028617 -0.19549997892999202 0.290429288230394" size="0.005"/>
+     <site name="pull-chest-1-left" pos="0.0533000000000001 3.45049538332671e-12 0.212207990862329" size="0.005"/>
+     <site name="pull-chest-1-right" pos="0.0533000000000001 -3.45049538332671e-12 0.212207990862329" size="0.005"/>
+     <site name="pulled-chest-1-left" pos="0.0184999999999995 3.44968767510422e-12 0.256" size="0.005"/>
+     <site name="pulled-chest-1-right" pos="0.0184999999999995 -3.44968767510422e-12 0.256" size="0.005"/>
+     <site name="pulled-scapula-2-left" pos="0.0139999999971383 0.2333 0.290619208629236" size="0.005"/>
+     <site name="pulled-scapula-2-right" pos="0.0139999999971383 -0.2333 0.290619208629236" size="0.005"/>
+     <site name="pulled-scapula-3-left" pos="0.0474999999971382 0.2075 0.29044497474676095" size="0.005"/>
+     <site name="pulled-scapula-3-right" pos="0.0474999999971382 -0.2075 0.29044497474676095" size="0.005"/>
+     <site name="pull-scapula-1-left" pos="-0.0305000000028618 0.1415 0.283245258073921" size="0.005"/>
+     <site name="pull-scapula-1-right" pos="-0.0305000000028618 -0.1415 0.283245258073921" size="0.005"/>
+     <site name="pull-scapula-4-left" pos="-0.0305000000028617 0.1415 0.20764497474683" size="0.005"/>
+     <site name="pull-scapula-4-right" pos="-0.0305000000028617 -0.1415 0.20764497474683" size="0.005"/>
+     <site name="via-scapula-1-1-left" pos="-0.028000000002858398 0.238802247634027 0.284132558391634" size="0.005"/>
+     <site name="via-scapula-1-1-right" pos="-0.028000000002858398 -0.238802247634027 0.284132558391634" size="0.005"/>
+     <site name="pulled-scapula-1-left" pos="-0.0474700774129066 0.1515 0.265444974746761" size="0.005"/>
+     <site name="pulled-scapula-1-right" pos="-0.0474700774129066 -0.1515 0.265444974746761" size="0.005"/>
+     <site name="pulled-humerus-4-left" pos="0.047499999997138304 0.1515 0.265444974746761" size="0.005"/>
+     <site name="pulled-humerus-4-right" pos="0.047499999997138304 -0.1515 0.265444974746761" size="0.005"/>
+     <site name="pull-scapula-2-left" pos="4.2975126967658397e-07 0.1415 0.28474595495705596" size="0.005"/>
+     <site name="pull-scapula-2-right" pos="4.2975126967658397e-07 -0.1415 0.28474595495705596" size="0.005"/>
+     <site name="via-humerus-2-1-left" pos="-0.0474700774129066 0.201438475903236 0.29058488534250604" size="0.005"/>
+     <site name="via-humerus-2-1-right" pos="-0.0474700774129066 -0.201438475903236 0.29058488534250604" size="0.005"/>
+     <site name="via-scapula-2-1-left" pos="-2.8583771614325103e-12 0.238802247634027 0.284132558391594" size="0.005"/>
+     <site name="via-scapula-2-1-right" pos="-2.8583771614325103e-12 -0.238802247634027 0.284132558391594" size="0.005"/>
+     <site name="pull-scapula-3-left" pos="0.0304999999971383 0.1415 0.283245258073921" size="0.005"/>
+     <site name="pull-scapula-3-right" pos="0.0304999999971383 -0.1415 0.283245258073921" size="0.005"/>
+     <site name="via-scapula-3-1-left" pos="0.0279999999971384 0.238802247634027 0.284132558391594" size="0.005"/>
+     <site name="via-scapula-3-1-right" pos="0.0279999999971384 -0.238802247634027 0.284132558391594" size="0.005"/>
+    </body>
+    
+            
+   </body>
+   
+        
+  </body>
+  
+    
+  <site name="pulled-pelvis-1-left" pos="0.0565 0.152 -0.067" size="0.005"/>
+  <site name="pulled-pelvis-1-right" pos="0.0565 -0.152 -0.067" size="0.005"/>
+  <site name="pulled-femur-4-left" pos="-0.0725 0.0609999999954904 -0.230999999999989" size="0.005"/>
+  <site name="pulled-femur-4-right" pos="-0.0725 -0.0609999999954904 -0.230999999999989" size="0.005"/>
+  <site name="pulled-femur-3-left" pos="0.076 0.0874999999954903 -0.115999999999989" size="0.005"/>
+  <site name="pulled-femur-3-right" pos="0.076 -0.0874999999954903 -0.115999999999989" size="0.005"/>
+  <site name="pulled-femur-1-left" pos="0.0275 0.15299999999549 -0.115999999999989" size="0.005"/>
+  <site name="pulled-femur-1-right" pos="0.0275 -0.15299999999549 -0.115999999999989" size="0.005"/>
+  <site name="pull-pelvis-4-left" pos="0.1098 0.0425000000034362 -0.23020799086232402" size="0.005"/>
+  <site name="pull-pelvis-4-right" pos="0.1098 -0.0425000000034362 -0.23020799086232402" size="0.005"/>
+  <site name="pull-pelvis-1-left" pos="0.0803204999999998 0.134200000003447 -0.0679920090692234" size="0.005"/>
+  <site name="pull-pelvis-1-right" pos="0.0803204999999998 -0.134200000003447 -0.0679920090692234" size="0.005"/>
+  <site name="pull-pelvis-3-left" pos="0.1098 0.0145000000034362 -0.23020799086232402" size="0.005"/>
+  <site name="pull-pelvis-3-right" pos="0.1098 -0.0145000000034362 -0.23020799086232402" size="0.005"/>
+  <site name="pulled-pelvis-2-left" pos="-0.0465 0.152 -0.067" size="0.005"/>
+  <site name="pulled-pelvis-2-right" pos="-0.0465 -0.152 -0.067" size="0.005"/>
+  <site name="pull-pelvis-2-left" pos="-0.0703204999999997 0.134200000003446 -0.0679920090692237" size="0.005"/>
+  <site name="pull-pelvis-2-right" pos="-0.0703204999999997 -0.134200000003446 -0.0679920090692237" size="0.005"/>
+  <site name="pulled-femur-6-left" pos="-0.0725 0.15299999999549 -0.115999999999989" size="0.005"/>
+  <site name="pulled-femur-6-right" pos="-0.0725 -0.15299999999549 -0.115999999999989" size="0.005"/>
+ </worldbody>
+ 
+
+ <tendon>
+  <spatial name="wire-chest-1" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-chest-1-left"/>
+   <site site="via-chest-1-1-left"/>
+   <site site="via-chest-1-2-left"/>
+   <site site="via-chest-1-3-left"/>
+   <site site="pulled-chest-1-left"/>
+  </spatial>
+  <spatial name="wire-femur-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-1-left"/>
+   <site site="pulled-femur-1-left"/>
+  </spatial>
+  <spatial name="wire-femur-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-1-right"/>
+   <site site="pulled-femur-1-right"/>
+  </spatial>
+  <spatial name="wire-femur-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-2-left"/>
+   <site site="pulled-femur-2-left"/>
+  </spatial>
+  <spatial name="wire-femur-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-2-right"/>
+   <site site="pulled-femur-2-right"/>
+  </spatial>
+  <spatial name="wire-femur-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-3-left"/>
+   <site site="pulled-femur-3-left"/>
+  </spatial>
+  <spatial name="wire-femur-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-3-right"/>
+   <site site="pulled-femur-3-right"/>
+  </spatial>
+  <spatial name="wire-femur-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-4-left"/>
+   <site site="pulled-femur-4-left"/>
+  </spatial>
+  <spatial name="wire-femur-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-4-right"/>
+   <site site="pulled-femur-4-right"/>
+  </spatial>
+  <spatial name="wire-femur-5l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-5-left"/>
+   <site site="pulled-femur-5-left"/>
+  </spatial>
+  <spatial name="wire-femur-5r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-5-right"/>
+   <site site="pulled-femur-5-right"/>
+  </spatial>
+  <spatial name="wire-femur-6l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-6-left"/>
+   <site site="pulled-femur-6-left"/>
+  </spatial>
+  <spatial name="wire-femur-6r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-femur-6-right"/>
+   <site site="pulled-femur-6-right"/>
+  </spatial>
+  <spatial name="wire-forearm-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-1-left"/>
+   <site site="pulled-forearm-1-left"/>
+  </spatial>
+  <spatial name="wire-forearm-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-1-right"/>
+   <site site="pulled-forearm-1-right"/>
+  </spatial>
+  <spatial name="wire-forearm-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-2-left"/>
+   <site site="pulled-forearm-2-left"/>
+  </spatial>
+  <spatial name="wire-forearm-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-2-right"/>
+   <site site="pulled-forearm-2-right"/>
+  </spatial>
+  <spatial name="wire-forearm-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-3-left"/>
+   <site site="via-forearm-3-1-left"/>
+   <site site="via-forearm-3-2-left"/>
+   <site site="via-forearm-3-3-left"/>
+   <site site="via-forearm-3-4-left"/>
+   <site site="via-forearm-3-5-left"/>
+   <site site="via-forearm-3-6-left"/>
+   <site site="pulled-forearm-3-left"/>
+  </spatial>
+  <spatial name="wire-forearm-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-3-right"/>
+   <site site="via-forearm-3-1-right"/>
+   <site site="via-forearm-3-2-right"/>
+   <site site="via-forearm-3-3-right"/>
+   <site site="via-forearm-3-4-right"/>
+   <site site="via-forearm-3-5-right"/>
+   <site site="via-forearm-3-6-right"/>
+   <site site="pulled-forearm-3-right"/>
+  </spatial>
+  <spatial name="wire-forearm-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-4-left"/>
+   <site site="via-forearm-4-1-left"/>
+   <site site="via-forearm-4-2-left"/>
+   <site site="pulled-forearm-4-left"/>
+  </spatial>
+  <spatial name="wire-forearm-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-4-right"/>
+   <site site="via-forearm-4-1-right"/>
+   <site site="via-forearm-4-2-right"/>
+   <site site="pulled-forearm-4-right"/>
+  </spatial>
+  <spatial name="wire-forearm-5l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-5-left"/>
+   <site site="via-forearm-5-1-left"/>
+   <site site="via-forearm-5-2-left"/>
+   <site site="via-forearm-5-3-left"/>
+   <site site="via-forearm-5-4-left"/>
+   <site site="via-forearm-5-5-left"/>
+   <site site="via-forearm-5-6-left"/>
+   <site site="pulled-forearm-5-left"/>
+  </spatial>
+  <spatial name="wire-forearm-5r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-5-right"/>
+   <site site="via-forearm-5-1-right"/>
+   <site site="via-forearm-5-2-right"/>
+   <site site="via-forearm-5-3-right"/>
+   <site site="via-forearm-5-4-right"/>
+   <site site="via-forearm-5-5-right"/>
+   <site site="via-forearm-5-6-right"/>
+   <site site="pulled-forearm-5-right"/>
+  </spatial>
+  <spatial name="wire-forearm-6l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-6-left"/>
+   <site site="via-forearm-6-1-left"/>
+   <site site="via-forearm-6-2-left"/>
+   <site site="via-forearm-6-3-left"/>
+   <site site="via-forearm-6-4-left"/>
+   <site site="via-forearm-6-5-left"/>
+   <site site="via-forearm-6-6-left"/>
+   <site site="pulled-forearm-6-left"/>
+  </spatial>
+  <spatial name="wire-forearm-6r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-6-right"/>
+   <site site="via-forearm-6-1-right"/>
+   <site site="via-forearm-6-2-right"/>
+   <site site="via-forearm-6-3-right"/>
+   <site site="via-forearm-6-4-right"/>
+   <site site="via-forearm-6-5-right"/>
+   <site site="via-forearm-6-6-right"/>
+   <site site="pulled-forearm-6-right"/>
+  </spatial>
+  <spatial name="wire-forearm-7l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-7-left"/>
+   <site site="pulled-forearm-7-left"/>
+  </spatial>
+  <spatial name="wire-forearm-7r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-7-right"/>
+   <site site="pulled-forearm-7-right"/>
+  </spatial>
+  <spatial name="wire-forearm-8l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-8-left"/>
+   <site site="pulled-forearm-8-left"/>
+  </spatial>
+  <spatial name="wire-forearm-8r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-forearm-8-right"/>
+   <site site="pulled-forearm-8-right"/>
+  </spatial>
+  <spatial name="wire-head-1" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-head-1-left"/>
+   <site site="via-head-1-left"/>
+   <site site="pulled-head-1-left"/>
+  </spatial>
+  <spatial name="wire-head-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-head-2-left"/>
+   <site site="via-head-2-1-left"/>
+   <site site="via-head-2-2-left"/>
+   <site site="pulled-head-2-left"/>
+  </spatial>
+  <spatial name="wire-head-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-head-2-right"/>
+   <site site="via-head-2-1-right"/>
+   <site site="via-head-2-2-right"/>
+   <site site="pulled-head-2-right"/>
+  </spatial>
+  <spatial name="wire-head-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-head-3-left"/>
+   <site site="pulled-head-3-left"/>
+  </spatial>
+  <spatial name="wire-head-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-head-3-right"/>
+   <site site="pulled-head-3-right"/>
+  </spatial>
+  <spatial name="wire-humerus-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-1-left"/>
+   <site site="via-humerus-1-1-left"/>
+   <site site="via-humerus-1-2-left"/>
+   <site site="via-humerus-1-3-left"/>
+   <site site="via-humerus-1-4-left"/>
+   <site site="via-humerus-1-5-left"/>
+   <site site="pulled-humerus-1-left"/>
+  </spatial>
+  <spatial name="wire-humerus-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-1-right"/>
+   <site site="via-humerus-1-1-right"/>
+   <site site="via-humerus-1-2-right"/>
+   <site site="via-humerus-1-3-right"/>
+   <site site="via-humerus-1-4-right"/>
+   <site site="via-humerus-1-5-right"/>
+   <site site="pulled-humerus-1-right"/>
+  </spatial>
+  <spatial name="wire-humerus-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-2-left"/>
+   <site site="via-humerus-2-1-left"/>
+   <site site="pulled-humerus-2-left"/>
+  </spatial>
+  <spatial name="wire-humerus-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-2-right"/>
+   <site site="via-humerus-2-1-right"/>
+   <site site="pulled-humerus-2-right"/>
+  </spatial>
+  <spatial name="wire-humerus-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-3-left"/>
+   <site site="via-humerus-3-1-left"/>
+   <site site="via-humerus-3-2-left"/>
+   <site site="via-humerus-3-3-left"/>
+   <site site="via-humerus-3-4-left"/>
+   <site site="via-humerus-3-5-left"/>
+   <site site="pulled-humerus-3-left"/>
+  </spatial>
+  <spatial name="wire-humerus-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-3-right"/>
+   <site site="via-humerus-3-1-right"/>
+   <site site="via-humerus-3-2-right"/>
+   <site site="via-humerus-3-3-right"/>
+   <site site="via-humerus-3-4-right"/>
+   <site site="via-humerus-3-5-right"/>
+   <site site="pulled-humerus-3-right"/>
+  </spatial>
+  <spatial name="wire-humerus-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-4-left"/>
+   <site site="via-humerus-4-1-left"/>
+   <site site="pulled-humerus-4-left"/>
+  </spatial>
+  <spatial name="wire-humerus-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-4-right"/>
+   <site site="via-humerus-4-1-right"/>
+   <site site="pulled-humerus-4-right"/>
+  </spatial>
+  <spatial name="wire-humerus-5l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-5-left"/>
+   <site site="via-humerus-5-1-left"/>
+   <site site="pulled-humerus-5-left"/>
+  </spatial>
+  <spatial name="wire-humerus-5r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-humerus-5-right"/>
+   <site site="via-humerus-5-1-right"/>
+   <site site="pulled-humerus-5-right"/>
+  </spatial>
+  <spatial name="wire-pelvis-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-1-left"/>
+   <site site="via-pelvis-1-left"/>
+   <site site="pulled-pelvis-1-left"/>
+  </spatial>
+  <spatial name="wire-pelvis-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-1-right"/>
+   <site site="via-pelvis-1-right"/>
+   <site site="pulled-pelvis-1-right"/>
+  </spatial>
+  <spatial name="wire-pelvis-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-2-left"/>
+   <site site="via-pelvis-2-left"/>
+   <site site="pulled-pelvis-2-left"/>
+  </spatial>
+  <spatial name="wire-pelvis-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-2-right"/>
+   <site site="via-pelvis-2-right"/>
+   <site site="pulled-pelvis-2-right"/>
+  </spatial>
+  <spatial name="wire-pelvis-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-3-left"/>
+   <site site="pulled-pelvis-3-left"/>
+  </spatial>
+  <spatial name="wire-pelvis-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-3-right"/>
+   <site site="pulled-pelvis-3-right"/>
+  </spatial>
+  <spatial name="wire-pelvis-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-4-left"/>
+   <site site="pulled-pelvis-4-left"/>
+  </spatial>
+  <spatial name="wire-pelvis-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-pelvis-4-right"/>
+   <site site="pulled-pelvis-4-right"/>
+  </spatial>
+  <spatial name="wire-scapula-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-1-left"/>
+   <site site="via-scapula-1-1-left"/>
+   <site site="via-scapula-1-2-left"/>
+   <site site="pulled-scapula-1-left"/>
+  </spatial>
+  <spatial name="wire-scapula-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-1-right"/>
+   <site site="via-scapula-1-1-right"/>
+   <site site="via-scapula-1-2-right"/>
+   <site site="pulled-scapula-1-right"/>
+  </spatial>
+  <spatial name="wire-scapula-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-2-left"/>
+   <site site="via-scapula-2-1-left"/>
+   <site site="via-scapula-2-2-left"/>
+   <site site="pulled-scapula-2-left"/>
+  </spatial>
+  <spatial name="wire-scapula-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-2-right"/>
+   <site site="via-scapula-2-1-right"/>
+   <site site="via-scapula-2-2-right"/>
+   <site site="pulled-scapula-2-right"/>
+  </spatial>
+  <spatial name="wire-scapula-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-3-left"/>
+   <site site="via-scapula-3-1-left"/>
+   <site site="via-scapula-3-2-left"/>
+   <site site="pulled-scapula-3-left"/>
+  </spatial>
+  <spatial name="wire-scapula-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-3-right"/>
+   <site site="via-scapula-3-1-right"/>
+   <site site="via-scapula-3-2-right"/>
+   <site site="pulled-scapula-3-right"/>
+  </spatial>
+  <spatial name="wire-scapula-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-4-left"/>
+   <site site="via-scapula-4-1-left"/>
+   <site site="via-scapula-4-2-left"/>
+   <site site="pulled-scapula-4-left"/>
+  </spatial>
+  <spatial name="wire-scapula-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-4-right"/>
+   <site site="via-scapula-4-1-right"/>
+   <site site="via-scapula-4-2-right"/>
+   <site site="pulled-scapula-4-right"/>
+  </spatial>
+  <spatial name="wire-scapula-5l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-5-left"/>
+   <site site="via-scapula-5-1-left"/>
+   <site site="via-scapula-5-2-left"/>
+   <site site="pulled-scapula-5-left"/>
+  </spatial>
+  <spatial name="wire-scapula-5r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-scapula-5-right"/>
+   <site site="via-scapula-5-1-right"/>
+   <site site="via-scapula-5-2-right"/>
+   <site site="pulled-scapula-5-right"/>
+  </spatial>
+  <spatial name="wire-tibia-1l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-1-left"/>
+   <site site="via-tibia-1-1-left"/>
+   <site site="via-tibia-1-2-left"/>
+   <site site="pulled-tibia-1-left"/>
+  </spatial>
+  <spatial name="wire-tibia-1r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-1-right"/>
+   <site site="via-tibia-1-1-right"/>
+   <site site="via-tibia-1-2-right"/>
+   <site site="pulled-tibia-1-right"/>
+  </spatial>
+  <spatial name="wire-tibia-2l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-2-left"/>
+   <site site="pulled-tibia-2-left"/>
+  </spatial>
+  <spatial name="wire-tibia-2r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-2-right"/>
+   <site site="pulled-tibia-2-right"/>
+  </spatial>
+  <spatial name="wire-tibia-3l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-3-left"/>
+   <site site="pulled-tibia-3-left"/>
+  </spatial>
+  <spatial name="wire-tibia-3r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-3-right"/>
+   <site site="pulled-tibia-3-right"/>
+  </spatial>
+  <spatial name="wire-tibia-4l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-4-left"/>
+   <site site="via-tibia-4-1-left"/>
+   <site site="via-tibia-4-2-left"/>
+   <site site="via-tibia-4-3-left"/>
+   <site site="via-tibia-4-4-left"/>
+   <site site="pulled-tibia-4-left"/>
+  </spatial>
+  <spatial name="wire-tibia-4r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-4-right"/>
+   <site site="via-tibia-4-1-right"/>
+   <site site="via-tibia-4-2-right"/>
+   <site site="via-tibia-4-3-right"/>
+   <site site="via-tibia-4-4-right"/>
+   <site site="pulled-tibia-4-right"/>
+  </spatial>
+  <spatial name="wire-tibia-5l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-5-left"/>
+   <site site="pulled-tibia-5-left"/>
+  </spatial>
+  <spatial name="wire-tibia-5r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-5-right"/>
+   <site site="pulled-tibia-5-right"/>
+  </spatial>
+  <spatial name="wire-tibia-6l" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-6-left"/>
+   <site site="pulled-tibia-6-left"/>
+  </spatial>
+  <spatial name="wire-tibia-6r" rgba=".4 .6 .4 1" width="0.003">
+   <site site="pull-tibia-6-right"/>
+   <site site="pulled-tibia-6-right"/>
+  </spatial>
+ </tendon>
+ <actuator>
+  <muscle name="wire-chest-1" tendon="wire-chest-1"/>
+  <muscle name="wire-femur-1l" tendon="wire-femur-1l"/>
+  <muscle name="wire-femur-1r" tendon="wire-femur-1r"/>
+  <muscle name="wire-femur-2l" tendon="wire-femur-2l"/>
+  <muscle name="wire-femur-2r" tendon="wire-femur-2r"/>
+  <muscle name="wire-femur-3l" tendon="wire-femur-3l"/>
+  <muscle name="wire-femur-3r" tendon="wire-femur-3r"/>
+  <muscle name="wire-femur-4l" tendon="wire-femur-4l"/>
+  <muscle name="wire-femur-4r" tendon="wire-femur-4r"/>
+  <muscle name="wire-femur-5l" tendon="wire-femur-5l"/>
+  <muscle name="wire-femur-5r" tendon="wire-femur-5r"/>
+  <muscle name="wire-femur-6l" tendon="wire-femur-6l"/>
+  <muscle name="wire-femur-6r" tendon="wire-femur-6r"/>
+  <muscle name="wire-forearm-1l" tendon="wire-forearm-1l"/>
+  <muscle name="wire-forearm-1r" tendon="wire-forearm-1r"/>
+  <muscle name="wire-forearm-2l" tendon="wire-forearm-2l"/>
+  <muscle name="wire-forearm-2r" tendon="wire-forearm-2r"/>
+  <muscle name="wire-forearm-3l" tendon="wire-forearm-3l"/>
+  <muscle name="wire-forearm-3r" tendon="wire-forearm-3r"/>
+  <muscle name="wire-forearm-4l" tendon="wire-forearm-4l"/>
+  <muscle name="wire-forearm-4r" tendon="wire-forearm-4r"/>
+  <muscle name="wire-forearm-5l" tendon="wire-forearm-5l"/>
+  <muscle name="wire-forearm-5r" tendon="wire-forearm-5r"/>
+  <muscle name="wire-forearm-6l" tendon="wire-forearm-6l"/>
+  <muscle name="wire-forearm-6r" tendon="wire-forearm-6r"/>
+  <muscle name="wire-forearm-7l" tendon="wire-forearm-7l"/>
+  <muscle name="wire-forearm-7r" tendon="wire-forearm-7r"/>
+  <muscle name="wire-forearm-8l" tendon="wire-forearm-8l"/>
+  <muscle name="wire-forearm-8r" tendon="wire-forearm-8r"/>
+  <muscle name="wire-head-1" tendon="wire-head-1"/>
+  <muscle name="wire-head-2l" tendon="wire-head-2l"/>
+  <muscle name="wire-head-2r" tendon="wire-head-2r"/>
+  <muscle name="wire-head-3l" tendon="wire-head-3l"/>
+  <muscle name="wire-head-3r" tendon="wire-head-3r"/>
+  <muscle name="wire-humerus-1l" tendon="wire-humerus-1l"/>
+  <muscle name="wire-humerus-1r" tendon="wire-humerus-1r"/>
+  <muscle name="wire-humerus-2l" tendon="wire-humerus-2l"/>
+  <muscle name="wire-humerus-2r" tendon="wire-humerus-2r"/>
+  <muscle name="wire-humerus-3l" tendon="wire-humerus-3l"/>
+  <muscle name="wire-humerus-3r" tendon="wire-humerus-3r"/>
+  <muscle name="wire-humerus-4l" tendon="wire-humerus-4l"/>
+  <muscle name="wire-humerus-4r" tendon="wire-humerus-4r"/>
+  <muscle name="wire-humerus-5l" tendon="wire-humerus-5l"/>
+  <muscle name="wire-humerus-5r" tendon="wire-humerus-5r"/>
+  <muscle name="wire-pelvis-1l" tendon="wire-pelvis-1l"/>
+  <muscle name="wire-pelvis-1r" tendon="wire-pelvis-1r"/>
+  <muscle name="wire-pelvis-2l" tendon="wire-pelvis-2l"/>
+  <muscle name="wire-pelvis-2r" tendon="wire-pelvis-2r"/>
+  <muscle name="wire-pelvis-3l" tendon="wire-pelvis-3l"/>
+  <muscle name="wire-pelvis-3r" tendon="wire-pelvis-3r"/>
+  <muscle name="wire-pelvis-4l" tendon="wire-pelvis-4l"/>
+  <muscle name="wire-pelvis-4r" tendon="wire-pelvis-4r"/>
+  <muscle name="wire-scapula-1l" tendon="wire-scapula-1l"/>
+  <muscle name="wire-scapula-1r" tendon="wire-scapula-1r"/>
+  <muscle name="wire-scapula-2l" tendon="wire-scapula-2l"/>
+  <muscle name="wire-scapula-2r" tendon="wire-scapula-2r"/>
+  <muscle name="wire-scapula-3l" tendon="wire-scapula-3l"/>
+  <muscle name="wire-scapula-3r" tendon="wire-scapula-3r"/>
+  <muscle name="wire-scapula-4l" tendon="wire-scapula-4l"/>
+  <muscle name="wire-scapula-4r" tendon="wire-scapula-4r"/>
+  <muscle name="wire-scapula-5l" tendon="wire-scapula-5l"/>
+  <muscle name="wire-scapula-5r" tendon="wire-scapula-5r"/>
+  <muscle name="wire-tibia-1l" tendon="wire-tibia-1l"/>
+  <muscle name="wire-tibia-1r" tendon="wire-tibia-1r"/>
+  <muscle name="wire-tibia-2l" tendon="wire-tibia-2l"/>
+  <muscle name="wire-tibia-2r" tendon="wire-tibia-2r"/>
+  <muscle name="wire-tibia-3l" tendon="wire-tibia-3l"/>
+  <muscle name="wire-tibia-3r" tendon="wire-tibia-3r"/>
+  <muscle name="wire-tibia-4l" tendon="wire-tibia-4l"/>
+  <muscle name="wire-tibia-4r" tendon="wire-tibia-4r"/>
+  <muscle name="wire-tibia-5l" tendon="wire-tibia-5l"/>
+  <muscle name="wire-tibia-5r" tendon="wire-tibia-5r"/>
+  <muscle name="wire-tibia-6l" tendon="wire-tibia-6l"/>
+  <muscle name="wire-tibia-6r" tendon="wire-tibia-6r"/>
+ </actuator>
+</mujoco>

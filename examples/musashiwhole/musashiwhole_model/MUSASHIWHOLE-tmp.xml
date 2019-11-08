@@ -1,0 +1,441 @@
+<mujoco model="MUSASHIWHOLE">
+    <compiler angle="radian" />
+    <option collision="predefined" />
+    <size njmax="500" nconmax="100" />
+    <asset>
+        <mesh name="PELVIS_LINK_mesh" file="PELVIS_LINK_mesh.stl" />
+        <mesh name="LLEG_HIP_JM_YAW_LINK_mesh" file="LLEG_HIP_JM_YAW_LINK_mesh.stl" />
+        <mesh name="LLEG_HIP_JM_ROLL_LINK_mesh" file="LLEG_HIP_JM_ROLL_LINK_mesh.stl" />
+        <mesh name="LLEG_FEMUR_LINK_mesh" file="LLEG_FEMUR_LINK_mesh.stl" />
+        <mesh name="LLEG_KNEE_JM_PITCH_LINK_mesh" file="LLEG_KNEE_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="LLEG_TIBIA_LINK_mesh" file="LLEG_TIBIA_LINK_mesh.stl" />
+        <mesh name="LLEG_ANKLE_JM_PITCH_LINK_mesh" file="LLEG_ANKLE_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="LLEG_FOOT_LINK_mesh" file="LLEG_FOOT_LINK_mesh.stl" />
+        <mesh name="LLEG_HEEL_LINK_mesh" file="LLEG_HEEL_LINK_mesh.stl" />
+        <mesh name="LLEG_TOE_LINK_mesh" file="LLEG_TOE_LINK_mesh.stl" />
+        <mesh name="RLEG_HIP_JM_YAW_LINK_mesh" file="RLEG_HIP_JM_YAW_LINK_mesh.stl" />
+        <mesh name="RLEG_HIP_JM_ROLL_LINK_mesh" file="RLEG_HIP_JM_ROLL_LINK_mesh.stl" />
+        <mesh name="RLEG_FEMUR_LINK_mesh" file="RLEG_FEMUR_LINK_mesh.stl" />
+        <mesh name="RLEG_KNEE_JM_PITCH_LINK_mesh" file="RLEG_KNEE_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="RLEG_TIBIA_LINK_mesh" file="RLEG_TIBIA_LINK_mesh.stl" />
+        <mesh name="RLEG_ANKLE_JM_PITCH_LINK_mesh" file="RLEG_ANKLE_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="RLEG_FOOT_LINK_mesh" file="RLEG_FOOT_LINK_mesh.stl" />
+        <mesh name="RLEG_HEEL_LINK_mesh" file="RLEG_HEEL_LINK_mesh.stl" />
+        <mesh name="RLEG_TOE_LINK_mesh" file="RLEG_TOE_LINK_mesh.stl" />
+        <mesh name="SPINE_JM_PITCH_LINK_mesh" file="SPINE_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="SPINE_JM_ROLL_LINK_mesh" file="SPINE_JM_ROLL_LINK_mesh.stl" />
+        <mesh name="CHEST_LINK_mesh" file="CHEST_LINK_mesh.stl" />
+        <mesh name="LARM_HUMERUS_DUMMY1_LINK_mesh" file="LARM_HUMERUS_DUMMY1_LINK_mesh.stl" />
+        <mesh name="LARM_HUMERUS_DUMMY2_LINK_mesh" file="LARM_HUMERUS_DUMMY2_LINK_mesh.stl" />
+        <mesh name="LARM_HUMERUS_LINK_mesh" file="LARM_HUMERUS_LINK_mesh.stl" />
+        <mesh name="LARM_FOREARM_DUMMY1_LINK_mesh" file="LARM_FOREARM_DUMMY1_LINK_mesh.stl" />
+        <mesh name="LARM_FOREARM_LINK_mesh" file="LARM_FOREARM_LINK_mesh.stl" />
+        <mesh name="LARM_HAND_DUMMY1_LINK_mesh" file="LARM_HAND_DUMMY1_LINK_mesh.stl" />
+        <mesh name="LARM_HAND_LINK_mesh" file="LARM_HAND_LINK_mesh.stl" />
+        <mesh name="LARM_INDEX3_LINK_mesh" file="LARM_INDEX3_LINK_mesh.stl" />
+        <mesh name="LARM_INDEX2_LINK_mesh" file="LARM_INDEX2_LINK_mesh.stl" />
+        <mesh name="LARM_INDEX1_LINK_mesh" file="LARM_INDEX1_LINK_mesh.stl" />
+        <mesh name="LARM_LITTLE3_LINK_mesh" file="LARM_LITTLE3_LINK_mesh.stl" />
+        <mesh name="LARM_LITTLE2_LINK_mesh" file="LARM_LITTLE2_LINK_mesh.stl" />
+        <mesh name="LARM_LITTLE1_LINK_mesh" file="LARM_LITTLE1_LINK_mesh.stl" />
+        <mesh name="LARM_MIDDLE3_LINK_mesh" file="LARM_MIDDLE3_LINK_mesh.stl" />
+        <mesh name="LARM_MIDDLE2_LINK_mesh" file="LARM_MIDDLE2_LINK_mesh.stl" />
+        <mesh name="LARM_MIDDLE1_LINK_mesh" file="LARM_MIDDLE1_LINK_mesh.stl" />
+        <mesh name="LARM_RING3_LINK_mesh" file="LARM_RING3_LINK_mesh.stl" />
+        <mesh name="LARM_RING2_LINK_mesh" file="LARM_RING2_LINK_mesh.stl" />
+        <mesh name="LARM_RING1_LINK_mesh" file="LARM_RING1_LINK_mesh.stl" />
+        <mesh name="LARM_THUMB4_LINK_mesh" file="LARM_THUMB4_LINK_mesh.stl" />
+        <mesh name="LARM_THUMB3_LINK_mesh" file="LARM_THUMB3_LINK_mesh.stl" />
+        <mesh name="LARM_THUMB2_LINK_mesh" file="LARM_THUMB2_LINK_mesh.stl" />
+        <mesh name="LARM_THUMB1_LINK_mesh" file="LARM_THUMB1_LINK_mesh.stl" />
+        <mesh name="NECK_JM_PITCH_LINK_mesh" file="NECK_JM_PITCH_LINK_mesh.stl" />
+        <mesh name="NECK_JM_ROLL_LINK_mesh" file="NECK_JM_ROLL_LINK_mesh.stl" />
+        <mesh name="HEAD_LINK_mesh" file="HEAD_LINK_mesh.stl" />
+        <mesh name="EYE_DUMMY1_LINK_mesh" file="EYE_DUMMY1_LINK_mesh.stl" />
+        <mesh name="LEYE_LINK_mesh" file="LEYE_LINK_mesh.stl" />
+        <mesh name="REYE_LINK_mesh" file="REYE_LINK_mesh.stl" />
+        <mesh name="RARM_HUMERUS_DUMMY1_LINK_mesh" file="RARM_HUMERUS_DUMMY1_LINK_mesh.stl" />
+        <mesh name="RARM_HUMERUS_DUMMY2_LINK_mesh" file="RARM_HUMERUS_DUMMY2_LINK_mesh.stl" />
+        <mesh name="RARM_HUMERUS_LINK_mesh" file="RARM_HUMERUS_LINK_mesh.stl" />
+        <mesh name="RARM_FOREARM_DUMMY1_LINK_mesh" file="RARM_FOREARM_DUMMY1_LINK_mesh.stl" />
+        <mesh name="RARM_FOREARM_LINK_mesh" file="RARM_FOREARM_LINK_mesh.stl" />
+        <mesh name="RARM_HAND_DUMMY1_LINK_mesh" file="RARM_HAND_DUMMY1_LINK_mesh.stl" />
+        <mesh name="RARM_HAND_LINK_mesh" file="RARM_HAND_LINK_mesh.stl" />
+        <mesh name="RARM_INDEX3_LINK_mesh" file="RARM_INDEX3_LINK_mesh.stl" />
+        <mesh name="RARM_INDEX2_LINK_mesh" file="RARM_INDEX2_LINK_mesh.stl" />
+        <mesh name="RARM_INDEX1_LINK_mesh" file="RARM_INDEX1_LINK_mesh.stl" />
+        <mesh name="RARM_LITTLE3_LINK_mesh" file="RARM_LITTLE3_LINK_mesh.stl" />
+        <mesh name="RARM_LITTLE2_LINK_mesh" file="RARM_LITTLE2_LINK_mesh.stl" />
+        <mesh name="RARM_LITTLE1_LINK_mesh" file="RARM_LITTLE1_LINK_mesh.stl" />
+        <mesh name="RARM_MIDDLE3_LINK_mesh" file="RARM_MIDDLE3_LINK_mesh.stl" />
+        <mesh name="RARM_MIDDLE2_LINK_mesh" file="RARM_MIDDLE2_LINK_mesh.stl" />
+        <mesh name="RARM_MIDDLE1_LINK_mesh" file="RARM_MIDDLE1_LINK_mesh.stl" />
+        <mesh name="RARM_RING3_LINK_mesh" file="RARM_RING3_LINK_mesh.stl" />
+        <mesh name="RARM_RING2_LINK_mesh" file="RARM_RING2_LINK_mesh.stl" />
+        <mesh name="RARM_RING1_LINK_mesh" file="RARM_RING1_LINK_mesh.stl" />
+        <mesh name="RARM_THUMB4_LINK_mesh" file="RARM_THUMB4_LINK_mesh.stl" />
+        <mesh name="RARM_THUMB3_LINK_mesh" file="RARM_THUMB3_LINK_mesh.stl" />
+        <mesh name="RARM_THUMB2_LINK_mesh" file="RARM_THUMB2_LINK_mesh.stl" />
+        <mesh name="RARM_THUMB1_LINK_mesh" file="RARM_THUMB1_LINK_mesh.stl" />
+    </asset>
+    <worldbody>
+        <geom type="mesh" mesh="PELVIS_LINK_mesh" />
+        <body name="LLEG_HIP_JM_YAW_LINK" pos="0 0.074848 -0.174">
+            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+            <joint name="LLEG_HIP_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-1.39626 1.39626" damping="0.2" />
+            <geom pos="0 0.074848 -0.174" type="mesh" mesh="LLEG_HIP_JM_YAW_LINK_mesh" />
+            <body name="LLEG_HIP_JM_ROLL_LINK" pos="0 0 0">
+                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                <joint name="LLEG_HIP_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.523599 0.698132" damping="0.2" />
+                <geom type="mesh" mesh="LLEG_HIP_JM_ROLL_LINK_mesh" />
+                <body name="LLEG_FEMUR_LINK" pos="0 0 0">
+                    <inertial pos="0.024 0.0021 -0.135" mass="2.19" diaginertia="1 1 1" />
+                    <joint name="LLEG_HIP_JOINT_P" pos="0 0 0" axis="0 0.765921 -0.642934" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                    <geom type="mesh" mesh="LLEG_FEMUR_LINK_mesh" />
+                    <body name="LLEG_KNEE_JM_PITCH_LINK" pos="-0.003864 0.001455 -0.387444">
+                        <inertial pos="-0.008065 0 -0.146065" mass="0.72" diaginertia="1 1 1" />
+                        <joint name="LLEG_KNEE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="0 1.5708" damping="0.2" />
+                        <geom pos="-0.003864 0.001455 -0.387444" type="mesh" mesh="LLEG_KNEE_JM_PITCH_LINK_mesh" />
+                        <body name="LLEG_TIBIA_LINK" pos="0 0 0">
+                            <inertial pos="-0.003285 0 -0.13898" mass="0.75" diaginertia="1 1 1" />
+                            <joint name="LLEG_KNEE_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-0.523599 0.698132" damping="0.2" />
+                            <geom type="mesh" mesh="LLEG_TIBIA_LINK_mesh" />
+                            <body name="LLEG_ANKLE_JM_PITCH_LINK" pos="0 0 -0.396">
+                                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                <joint name="LLEG_ANKLE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-1.309 1.309" damping="0.2" />
+                                <geom pos="0 0 -0.396" type="mesh" mesh="LLEG_ANKLE_JM_PITCH_LINK_mesh" />
+                                <body name="LLEG_FOOT_LINK" pos="0 0 0">
+                                    <inertial pos="0.0224421 0.000121798 -0.025241" quat="-0.00654824 0.553576 0.00985016 0.832715" mass="0.941717" diaginertia="2.00056 2.00056 2" />
+                                    <joint name="LLEG_ANKLE_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-1.309 1.309" damping="0.2" />
+                                    <geom type="mesh" mesh="LLEG_FOOT_LINK_mesh" />
+                                    <geom pos="-0.012 0 -0.085" type="mesh" mesh="LLEG_HEEL_LINK_mesh" />
+                                    <body name="LLEG_TOE_LINK" pos="0.1195 0 -0.0455">
+                                        <inertial pos="0.024319 0.000124 -0.006775" mass="0.368967" diaginertia="1 1 1" />
+                                        <joint name="LLEG_TOE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-1.5708 0" damping="0.2" />
+                                        <geom pos="0.1195 0 -0.0455" type="mesh" mesh="LLEG_TOE_LINK_mesh" />
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+        <body name="RLEG_HIP_JM_YAW_LINK" pos="0 -0.074848 -0.174">
+            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+            <joint name="RLEG_HIP_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-1.39626 1.39626" damping="0.2" />
+            <geom pos="0 -0.074848 -0.174" type="mesh" mesh="RLEG_HIP_JM_YAW_LINK_mesh" />
+            <body name="RLEG_HIP_JM_ROLL_LINK" pos="0 0 0">
+                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                <joint name="RLEG_HIP_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.698132 0.523599" damping="0.2" />
+                <geom type="mesh" mesh="RLEG_HIP_JM_ROLL_LINK_mesh" />
+                <body name="RLEG_FEMUR_LINK" pos="0 0 0">
+                    <inertial pos="0.024 0.0021 -0.135" mass="2.19" diaginertia="1 1 1" />
+                    <joint name="RLEG_HIP_JOINT_P" pos="0 0 0" axis="0 0.765921 0.642934" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                    <geom type="mesh" mesh="RLEG_FEMUR_LINK_mesh" />
+                    <body name="RLEG_KNEE_JM_PITCH_LINK" pos="-0.003864 -0.001455 -0.387444">
+                        <inertial pos="-0.008065 0 -0.146065" mass="0.72" diaginertia="1 1 1" />
+                        <joint name="RLEG_KNEE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="0 1.5708" damping="0.2" />
+                        <geom pos="-0.003864 -0.001455 -0.387444" type="mesh" mesh="RLEG_KNEE_JM_PITCH_LINK_mesh" />
+                        <body name="RLEG_TIBIA_LINK" pos="0 0 0">
+                            <inertial pos="-0.003285 0 -0.13898" mass="0.75" diaginertia="1 1 1" />
+                            <joint name="RLEG_KNEE_JOINT_Y" pos="0 0 0" axis="0.104591 0 0.994515" limited="true" range="-0.698132 0.523599" damping="0.2" />
+                            <geom type="mesh" mesh="RLEG_TIBIA_LINK_mesh" />
+                            <body name="RLEG_ANKLE_JM_PITCH_LINK" pos="0 0 -0.396">
+                                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                <joint name="RLEG_ANKLE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-1.309 1.309" damping="0.2" />
+                                <geom pos="0 0 -0.396" type="mesh" mesh="RLEG_ANKLE_JM_PITCH_LINK_mesh" />
+                                <body name="RLEG_FOOT_LINK" pos="0 0 0">
+                                    <inertial pos="0.0224421 -0.000121798 -0.025241" quat="0.00654824 0.553576 -0.00985016 0.832715" mass="0.941717" diaginertia="2.00056 2.00056 2" />
+                                    <joint name="RLEG_ANKLE_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-1.309 1.309" damping="0.2" />
+                                    <geom type="mesh" mesh="RLEG_FOOT_LINK_mesh" />
+                                    <geom pos="-0.012 0 -0.085" type="mesh" mesh="RLEG_HEEL_LINK_mesh" />
+                                    <body name="RLEG_TOE_LINK" pos="0.1195 0 -0.0455">
+                                        <inertial pos="0.024319 -0.000124 -0.006775" mass="0.368967" diaginertia="1 1 1" />
+                                        <joint name="RLEG_TOE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-1.5708 0" damping="0.2" />
+                                        <geom pos="0.1195 0 -0.0455" type="mesh" mesh="RLEG_TOE_LINK_mesh" />
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+        <body name="SPINE_JM_PITCH_LINK" pos="0 0 0">
+            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+            <joint name="SPINE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-0.523599 0.698132" damping="0.2" />
+            <geom type="mesh" mesh="SPINE_JM_PITCH_LINK_mesh" />
+            <body name="SPINE_JM_ROLL_LINK" pos="0 0 0">
+                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                <joint name="SPINE_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.523599 0.523599" damping="0.2" />
+                <geom type="mesh" mesh="SPINE_JM_ROLL_LINK_mesh" />
+                <body name="CHEST_LINK" pos="0 0 0">
+                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                    <joint name="SPINE_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-0.785398 0.785398" damping="0.2" />
+                    <geom type="mesh" mesh="CHEST_LINK_mesh" />
+                    <body name="LARM_HUMERUS_DUMMY1_LINK" pos="0 0.178 0.231445">
+                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                        <joint name="LARM_SHOULDER_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-2.0944 0.785399" damping="0.2" />
+                        <geom pos="0 0.178 0.231445" type="mesh" mesh="LARM_HUMERUS_DUMMY1_LINK_mesh" />
+                        <body name="LARM_HUMERUS_DUMMY2_LINK" pos="0 0.039 0">
+                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                            <joint name="LARM_SHOULDER_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.523599 2.0944" damping="0.2" />
+                            <geom pos="0 0.039 0" type="mesh" mesh="LARM_HUMERUS_DUMMY2_LINK_mesh" />
+                            <body name="LARM_HUMERUS_LINK" pos="0 0 -0.073">
+                                <inertial pos="0.024 0.0021 -0.135" mass="2.19" diaginertia="1 1 1" />
+                                <joint name="LARM_SHOULDER_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                                <geom pos="0 0 -0.073" type="mesh" mesh="LARM_HUMERUS_LINK_mesh" />
+                                <body name="LARM_FOREARM_DUMMY1_LINK" pos="0.004 0 -0.231">
+                                    <inertial pos="-0.008065 0 -0.146065" mass="0.72" diaginertia="1 1 1" />
+                                    <joint name="LARM_ELBOW_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-2.3562 0" damping="0.2" />
+                                    <geom pos="0.004 0 -0.231" type="mesh" mesh="LARM_FOREARM_DUMMY1_LINK_mesh" />
+                                    <body name="LARM_FOREARM_LINK" pos="0 0 -0.04">
+                                        <inertial pos="-0.003285 0 -0.13898" mass="0.75" diaginertia="1 1 1" />
+                                        <joint name="LARM_ELBOW_JOINT_Y" pos="0 0 0" axis="0.104591 0 0.994515" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                                        <geom pos="0 0 -0.04" type="mesh" mesh="LARM_FOREARM_LINK_mesh" />
+                                        <body name="LARM_HAND_DUMMY1_LINK" pos="0 0 -0.191">
+                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                            <joint name="LARM_WRIST_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-0.7854 0.7854" damping="0.2" />
+                                            <geom pos="0 0 -0.191" type="mesh" mesh="LARM_HAND_DUMMY1_LINK_mesh" />
+                                            <body name="LARM_HAND_LINK" pos="0 0 0">
+                                                <inertial pos="0.01125 0 -0.03" mass="0.192" diaginertia="1 1 1" />
+                                                <joint name="LARM_WRIST_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.7854 0.7854" damping="0.2" />
+                                                <geom type="mesh" mesh="LARM_HAND_LINK_mesh" />
+                                                <body name="LARM_INDEX3_LINK" pos="0.0349544 -0.017 -0.100974">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="LARM_INDEX3_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                    <geom pos="0.0349544 -0.017 -0.100974" type="mesh" mesh="LARM_INDEX3_LINK_mesh" />
+                                                    <body name="LARM_INDEX2_LINK" pos="0.00348623 0 -0.0398478">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="LARM_INDEX2_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                        <geom pos="0.00348623 0 -0.0398478" type="mesh" mesh="LARM_INDEX2_LINK_mesh" />
+                                                        <body name="LARM_INDEX1_LINK" pos="0.00261467 0 -0.0298858">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="LARM_INDEX1_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                            <geom pos="0.00261467 0 -0.0298858" type="mesh" mesh="LARM_INDEX1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="LARM_LITTLE3_LINK" pos="-0.0273876 -0.017 -0.098252">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="LARM_LITTLE3_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="-1.5708 0" damping="0.2" />
+                                                    <geom pos="-0.0273876 -0.017 -0.098252" type="mesh" mesh="LARM_LITTLE3_LINK_mesh" />
+                                                    <body name="LARM_LITTLE2_LINK" pos="-0.00520945 0 -0.0295442">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="LARM_LITTLE2_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="-1.5708 0" damping="0.2" />
+                                                        <geom pos="-0.00520945 0 -0.0295442" type="mesh" mesh="LARM_LITTLE2_LINK_mesh" />
+                                                        <body name="LARM_LITTLE1_LINK" pos="-0.00520945 0 -0.0295442">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="LARM_LITTLE1_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="-1.5708 0" damping="0.2" />
+                                                            <geom pos="-0.00520945 0 -0.0295442" type="mesh" mesh="LARM_LITTLE1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="LARM_MIDDLE3_LINK" pos="0.0141209 -0.017 -0.101883">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="LARM_MIDDLE3_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5708 0" damping="0.2" />
+                                                    <geom pos="0.0141209 -0.017 -0.101883" type="mesh" mesh="LARM_MIDDLE3_LINK_mesh" />
+                                                    <body name="LARM_MIDDLE2_LINK" pos="0 0 -0.04">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="LARM_MIDDLE2_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5708 0" damping="0.2" />
+                                                        <geom pos="0 0 -0.04" type="mesh" mesh="LARM_MIDDLE2_LINK_mesh" />
+                                                        <body name="LARM_MIDDLE1_LINK" pos="0 0 -0.03">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="LARM_MIDDLE1_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5708 0" damping="0.2" />
+                                                            <geom pos="0 0 -0.03" type="mesh" mesh="LARM_MIDDLE1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="LARM_RING3_LINK" pos="-0.00671263 -0.017 -0.100974">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="LARM_RING3_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                    <geom pos="-0.00671263 -0.017 -0.100974" type="mesh" mesh="LARM_RING3_LINK_mesh" />
+                                                    <body name="LARM_RING2_LINK" pos="-0.00348623 0 -0.0398478">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="LARM_RING2_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                        <geom pos="-0.00348623 0 -0.0398478" type="mesh" mesh="LARM_RING2_LINK_mesh" />
+                                                        <body name="LARM_RING1_LINK" pos="-0.00261467 0 -0.0298858">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="LARM_RING1_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="-1.5708 0" damping="0.2" />
+                                                            <geom pos="-0.00261467 0 -0.0298858" type="mesh" mesh="LARM_RING1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="LARM_THUMB4_LINK" pos="0.0299678 -0.006 -0.0497134">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="LARM_THUMB4_JOINT_Y" pos="0 0 0" axis="-0.0871557 0 0.996195" limited="true" range="-2.09439 0" damping="0.2" />
+                                                    <geom pos="0.0299678 -0.006 -0.0497134" type="mesh" mesh="LARM_THUMB4_LINK_mesh" />
+                                                    <body name="LARM_THUMB3_LINK" pos="0 0 0">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="LARM_THUMB3_JOINT_Y" pos="0 0 0" axis="0 1 0" limited="true" range="0 0.872664" damping="0.2" />
+                                                        <geom type="mesh" mesh="LARM_THUMB3_LINK_mesh" />
+                                                        <body name="LARM_THUMB2_LINK" pos="0.0360228 -0.011 -0.0109274">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="LARM_THUMB2_JOINT_Y" pos="0 0 0" axis="0.405582 -0.70711 0.579223" limited="true" range="-1.5708 0" damping="0.2" />
+                                                            <geom pos="0.0360228 -0.011 -0.0109274" type="mesh" mesh="LARM_THUMB2_LINK_mesh" />
+                                                            <body name="LARM_THUMB1_LINK" pos="0.0245746 0 -0.0172073">
+                                                                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                                <joint name="LARM_THUMB1_JOINT_Y" pos="0 0 0" axis="0.405582 -0.70711 0.579223" limited="true" range="-1.5708 0" damping="0.2" />
+                                                                <geom pos="0.0245746 0 -0.0172073" type="mesh" mesh="LARM_THUMB1_LINK_mesh" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                    <body name="NECK_JM_PITCH_LINK" pos="0 0 0.322">
+                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                        <joint name="NECK_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-1.13446 0.785398" damping="0.2" />
+                        <geom pos="0 0 0.322" type="mesh" mesh="NECK_JM_PITCH_LINK_mesh" />
+                        <body name="NECK_JM_ROLL_LINK" pos="0 0 0">
+                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                            <joint name="NECK_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.785398 0.785398" damping="0.2" />
+                            <geom type="mesh" mesh="NECK_JM_ROLL_LINK_mesh" />
+                            <body name="HEAD_LINK" pos="0 0 0">
+                                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                <joint name="NECK_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                                <geom type="mesh" mesh="HEAD_LINK_mesh" />
+                                <body name="EYE_DUMMY1_LINK" pos="0.068814 0 0.134">
+                                    <inertial pos="-0.00188 0 0.0746" mass="2.12" diaginertia="1 1 1" />
+                                    <joint name="EYE_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-3.49065 1.0472" damping="0.2" />
+                                    <geom pos="0.068814 0 0.134" type="mesh" mesh="EYE_DUMMY1_LINK_mesh" />
+                                    <body name="LEYE_LINK" pos="0 0.04 0">
+                                        <inertial pos="-0.00188 0 0.0746" mass="0.1" diaginertia="1 1 1" />
+                                        <joint name="LEYE_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-3.83972 3.66519" damping="0.2" />
+                                        <geom pos="0 0.04 0" type="mesh" mesh="LEYE_LINK_mesh" />
+                                    </body>
+                                    <body name="REYE_LINK" pos="0 -0.04 0">
+                                        <inertial pos="-0.00188 0 0.0746" mass="0.1" diaginertia="1 1 1" />
+                                        <joint name="REYE_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-3.83972 3.66519" damping="0.2" />
+                                        <geom pos="0 -0.04 0" type="mesh" mesh="REYE_LINK_mesh" />
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                    <body name="RARM_HUMERUS_DUMMY1_LINK" pos="0 -0.178 0.231445">
+                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                        <joint name="RARM_SHOULDER_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-2.0944 0.785399" damping="0.2" />
+                        <geom pos="0 -0.178 0.231445" type="mesh" mesh="RARM_HUMERUS_DUMMY1_LINK_mesh" />
+                        <body name="RARM_HUMERUS_DUMMY2_LINK" pos="0 -0.039 0">
+                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                            <joint name="RARM_SHOULDER_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-2.0944 0.523599" damping="0.2" />
+                            <geom pos="0 -0.039 0" type="mesh" mesh="RARM_HUMERUS_DUMMY2_LINK_mesh" />
+                            <body name="RARM_HUMERUS_LINK" pos="0 0 -0.073">
+                                <inertial pos="0.024 0.0021 -0.135" mass="2.19" diaginertia="1 1 1" />
+                                <joint name="RARM_SHOULDER_JOINT_Y" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                                <geom pos="0 0 -0.073" type="mesh" mesh="RARM_HUMERUS_LINK_mesh" />
+                                <body name="RARM_FOREARM_DUMMY1_LINK" pos="0.004 0 -0.231">
+                                    <inertial pos="-0.008065 0 -0.146065" mass="0.72" diaginertia="1 1 1" />
+                                    <joint name="RARM_ELBOW_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-2.3562 0" damping="0.2" />
+                                    <geom pos="0.004 0 -0.231" type="mesh" mesh="RARM_FOREARM_DUMMY1_LINK_mesh" />
+                                    <body name="RARM_FOREARM_LINK" pos="0 0 -0.04">
+                                        <inertial pos="-0.003285 0 -0.13898" mass="0.75" diaginertia="1 1 1" />
+                                        <joint name="RARM_ELBOW_JOINT_Y" pos="0 0 0" axis="0.104591 0 0.994515" limited="true" range="-1.5708 1.5708" damping="0.2" />
+                                        <geom pos="0 0 -0.04" type="mesh" mesh="RARM_FOREARM_LINK_mesh" />
+                                        <body name="RARM_HAND_DUMMY1_LINK" pos="0 0 -0.191">
+                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                            <joint name="RARM_WRIST_JOINT_P" pos="0 0 0" axis="0 1 0" limited="true" range="-0.7854 0.7854" damping="0.2" />
+                                            <geom pos="0 0 -0.191" type="mesh" mesh="RARM_HAND_DUMMY1_LINK_mesh" />
+                                            <body name="RARM_HAND_LINK" pos="0 0 0">
+                                                <inertial pos="0.01125 0 -0.03" mass="0.192" diaginertia="1 1 1" />
+                                                <joint name="RARM_WRIST_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="-0.7854 0.7854" damping="0.2" />
+                                                <geom type="mesh" mesh="RARM_HAND_LINK_mesh" />
+                                                <body name="RARM_INDEX3_LINK" pos="0.0349544 0.017 -0.100974">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="RARM_INDEX3_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                    <geom pos="0.0349544 0.017 -0.100974" type="mesh" mesh="RARM_INDEX3_LINK_mesh" />
+                                                    <body name="RARM_INDEX2_LINK" pos="0.00348623 0 -0.0398478">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="RARM_INDEX2_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                        <geom pos="0.00348623 0 -0.0398478" type="mesh" mesh="RARM_INDEX2_LINK_mesh" />
+                                                        <body name="RARM_INDEX1_LINK" pos="0.00261467 0 -0.0298858">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="RARM_INDEX1_JOINT_R" pos="0 0 0" axis="0.996195 0 0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                            <geom pos="0.00261467 0 -0.0298858" type="mesh" mesh="RARM_INDEX1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="RARM_LITTLE3_LINK" pos="-0.0273876 0.017 -0.098252">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="RARM_LITTLE3_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="0 1.5708" damping="0.2" />
+                                                    <geom pos="-0.0273876 0.017 -0.098252" type="mesh" mesh="RARM_LITTLE3_LINK_mesh" />
+                                                    <body name="RARM_LITTLE2_LINK" pos="-0.00520945 0 -0.0295442">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="RARM_LITTLE2_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="0 1.5708" damping="0.2" />
+                                                        <geom pos="-0.00520945 0 -0.0295442" type="mesh" mesh="RARM_LITTLE2_LINK_mesh" />
+                                                        <body name="RARM_LITTLE1_LINK" pos="-0.00520945 0 -0.0295442">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="RARM_LITTLE1_JOINT_R" pos="0 0 0" axis="0.984808 0 -0.173648" limited="true" range="0 1.5708" damping="0.2" />
+                                                            <geom pos="-0.00520945 0 -0.0295442" type="mesh" mesh="RARM_LITTLE1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="RARM_MIDDLE3_LINK" pos="0.0141209 0.017 -0.101883">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="RARM_MIDDLE3_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="0 1.5708" damping="0.2" />
+                                                    <geom pos="0.0141209 0.017 -0.101883" type="mesh" mesh="RARM_MIDDLE3_LINK_mesh" />
+                                                    <body name="RARM_MIDDLE2_LINK" pos="0 0 -0.04">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="RARM_MIDDLE2_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="0 1.5708" damping="0.2" />
+                                                        <geom pos="0 0 -0.04" type="mesh" mesh="RARM_MIDDLE2_LINK_mesh" />
+                                                        <body name="RARM_MIDDLE1_LINK" pos="0 0 -0.03">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="RARM_MIDDLE1_JOINT_R" pos="0 0 0" axis="1 0 0" limited="true" range="0 1.5708" damping="0.2" />
+                                                            <geom pos="0 0 -0.03" type="mesh" mesh="RARM_MIDDLE1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="RARM_RING3_LINK" pos="-0.00671263 0.017 -0.100974">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="RARM_RING3_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                    <geom pos="-0.00671263 0.017 -0.100974" type="mesh" mesh="RARM_RING3_LINK_mesh" />
+                                                    <body name="RARM_RING2_LINK" pos="-0.00348623 0 -0.0398478">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="RARM_RING2_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                        <geom pos="-0.00348623 0 -0.0398478" type="mesh" mesh="RARM_RING2_LINK_mesh" />
+                                                        <body name="RARM_RING1_LINK" pos="-0.00261467 0 -0.0298858">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="RARM_RING1_JOINT_R" pos="0 0 0" axis="0.996195 0 -0.0871557" limited="true" range="0 1.5708" damping="0.2" />
+                                                            <geom pos="-0.00261467 0 -0.0298858" type="mesh" mesh="RARM_RING1_LINK_mesh" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                                <body name="RARM_THUMB4_LINK" pos="0.0299678 0.006 -0.0497134">
+                                                    <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                    <joint name="RARM_THUMB4_JOINT_Y" pos="0 0 0" axis="-0.0871557 0 0.996195" limited="true" range="0 2.09439" damping="0.2" />
+                                                    <geom pos="0.0299678 0.006 -0.0497134" type="mesh" mesh="RARM_THUMB4_LINK_mesh" />
+                                                    <body name="RARM_THUMB3_LINK" pos="0 0 0">
+                                                        <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                        <joint name="RARM_THUMB3_JOINT_Y" pos="0 0 0" axis="0 1 0" limited="true" range="0 0.872664" damping="0.2" />
+                                                        <geom type="mesh" mesh="RARM_THUMB3_LINK_mesh" />
+                                                        <body name="RARM_THUMB2_LINK" pos="0.0360228 0.011 -0.0109274">
+                                                            <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                            <joint name="RARM_THUMB2_JOINT_Y" pos="0 0 0" axis="0.405582 0.70711 0.579223" limited="true" range="0 1.5708" damping="0.2" />
+                                                            <geom pos="0.0360228 0.011 -0.0109274" type="mesh" mesh="RARM_THUMB2_LINK_mesh" />
+                                                            <body name="RARM_THUMB1_LINK" pos="0.0245746 0 -0.0172073">
+                                                                <inertial pos="0 0 0" mass="0.1" diaginertia="1 1 1" />
+                                                                <joint name="RARM_THUMB1_JOINT_Y" pos="0 0 0" axis="0.405582 0.70711 0.579223" limited="true" range="0 1.5708" damping="0.2" />
+                                                                <geom pos="0.0245746 0 -0.0172073" type="mesh" mesh="RARM_THUMB1_LINK_mesh" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

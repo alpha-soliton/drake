@@ -1,0 +1,2619 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="MUSASHIWHOLE">
+  <link name="PELVIS_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="PELVIS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="PELVIS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.15" />
+      <geometry>
+        <box size="0.2 0.3 0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.15" />
+      <geometry>
+        <box size="0.2 0.3 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="8.64" />
+      <origin rpy="0 -0 0" xyz="0.0364 0 -0.0682" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="PELVIS_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_HIP_JM_YAW_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0.074848 -0.174" />
+      <geometry>
+        <mesh filename="LLEG_HIP_JM_YAW_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0.074848 -0.174" />
+      <geometry>
+        <mesh filename="LLEG_HIP_JM_YAW_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_HIP_JM_YAW_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_HIP_JM_ROLL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_HIP_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_HIP_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_HIP_JM_ROLL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_FEMUR_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_FEMUR_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_FEMUR_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.19" />
+      <origin rpy="0 -0 0" xyz="0.024 0.0021 -0.135" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_FEMUR_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_KNEE_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.003864 0.001455 -0.387444" />
+      <geometry>
+        <mesh filename="LLEG_KNEE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.003864 0.001455 -0.387444" />
+      <geometry>
+        <mesh filename="LLEG_KNEE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72" />
+      <origin rpy="0 -0 0" xyz="-0.008065 0 -0.146065" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_KNEE_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_TIBIA_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_TIBIA_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_TIBIA_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.75" />
+      <origin rpy="0 -0 0" xyz="-0.003285 0 -0.13898" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_TIBIA_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_ANKLE_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.396" />
+      <geometry>
+        <mesh filename="LLEG_ANKLE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.396" />
+      <geometry>
+        <mesh filename="LLEG_ANKLE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_ANKLE_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_FOOT_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_FOOT_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LLEG_FOOT_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision>
+        <origin rpy="0 0 0" xyz="0.07 0 -0.05"/>
+        <geometry>
+            <box size="0.23 0.05 0.05"/>
+        </geometry>
+    </collision>
+    <visual>
+        <origin rpy="0 0 0" xyz="0.07 0 -0.05"/>
+        <geometry>
+            <box size="0.23 0.05 0.05"/>
+        </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.813162" />
+      <origin rpy="0 -0 0" xyz="0.031374 0.000351 -0.021492" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_FOOT_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_HEEL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.006 0 -0.0425" />
+      <geometry>
+        <mesh filename="LLEG_HEEL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.006 0 -0.0425" />
+      <geometry>
+        <mesh filename="LLEG_HEEL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.128555" />
+      <origin rpy="0 -0 0" xyz="-0.028056 -0.001328 -0.006455" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_HEEL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_TOE_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.1195 0 -0.0455" />
+      <geometry>
+        <mesh filename="LLEG_TOE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.1195 0 -0.0455" />
+      <geometry>
+        <mesh filename="LLEG_TOE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.368967" />
+      <origin rpy="0 -0 0" xyz="0.024319 0.000124 -0.006775" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_TOE_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_HIP_JM_YAW_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 -0.074848 -0.174" />
+      <geometry>
+        <mesh filename="RLEG_HIP_JM_YAW_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 -0.074848 -0.174" />
+      <geometry>
+        <mesh filename="RLEG_HIP_JM_YAW_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_HIP_JM_YAW_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_HIP_JM_ROLL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_HIP_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_HIP_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_HIP_JM_ROLL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_FEMUR_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_FEMUR_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_FEMUR_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.19" />
+      <origin rpy="0 -0 0" xyz="0.024 0.0021 -0.135" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_FEMUR_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_KNEE_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.003864 -0.001455 -0.387444" />
+      <geometry>
+        <mesh filename="RLEG_KNEE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.003864 -0.001455 -0.387444" />
+      <geometry>
+        <mesh filename="RLEG_KNEE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72" />
+      <origin rpy="0 -0 0" xyz="-0.008065 0 -0.146065" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_KNEE_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_TIBIA_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_TIBIA_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_TIBIA_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.75" />
+      <origin rpy="0 -0 0" xyz="-0.003285 0 -0.13898" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_TIBIA_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_ANKLE_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.396" />
+      <geometry>
+        <mesh filename="RLEG_ANKLE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.396" />
+      <geometry>
+        <mesh filename="RLEG_ANKLE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_ANKLE_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_FOOT_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_FOOT_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RLEG_FOOT_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision>
+        <origin rpy="0 0 0" xyz="0.07 0 -0.05"/>
+        <geometry>
+            <box size="0.23 0.05 0.05"/>
+        </geometry>
+    </collision>
+    <visual>
+        <origin rpy="0 0 0" xyz="0.07 0 -0.05"/>
+        <geometry>
+            <box size="0.23 0.05 0.05"/>
+        </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.813162" />
+      <origin rpy="0 -0 0" xyz="0.031374 -0.000351 -0.021492" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_FOOT_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_HEEL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.006 0 -0.0425" />
+      <geometry>
+        <mesh filename="RLEG_HEEL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.006 0 -0.0425" />
+      <geometry>
+        <mesh filename="RLEG_HEEL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.128555" />
+      <origin rpy="0 -0 0" xyz="-0.028056 0.001328 -0.006455" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_HEEL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_TOE_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.1195 0 -0.0455" />
+      <geometry>
+        <mesh filename="RLEG_TOE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.1195 0 -0.0455" />
+      <geometry>
+        <mesh filename="RLEG_TOE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.368967" />
+      <origin rpy="0 -0 0" xyz="0.024319 -0.000124 -0.006775" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_TOE_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="SPINE_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="SPINE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="SPINE_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="SPINE_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="SPINE_JM_ROLL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="SPINE_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="SPINE_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="SPINE_JM_ROLL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="CHEST_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="CHEST_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0.2" />
+      <geometry>
+        <cylinder radius="0.15" length="0.3"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0.2" />
+      <geometry>
+        <cylinder radius="0.15" length="0.3"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_HUMERUS_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0.178 0.231445" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0.178 0.231445" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_HUMERUS_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_HUMERUS_DUMMY2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0.039 0" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_DUMMY2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0.039 0" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_DUMMY2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_HUMERUS_DUMMY2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_HUMERUS_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.073" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.073" />
+      <geometry>
+        <mesh filename="LARM_HUMERUS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.19" />
+      <origin rpy="0 -0 0" xyz="0.024 0.0021 -0.135" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_HUMERUS_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_FOREARM_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.004 0 -0.231" />
+      <geometry>
+        <mesh filename="LARM_FOREARM_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.004 0 -0.231" />
+      <geometry>
+        <mesh filename="LARM_FOREARM_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72" />
+      <origin rpy="0 -0 0" xyz="-0.008065 0 -0.146065" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_FOREARM_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_FOREARM_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="LARM_FOREARM_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="LARM_FOREARM_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.75" />
+      <origin rpy="0 -0 0" xyz="-0.003285 0 -0.13898" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_FOREARM_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_HAND_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.191" />
+      <geometry>
+        <mesh filename="LARM_HAND_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.191" />
+      <geometry>
+        <mesh filename="LARM_HAND_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_HAND_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_HAND_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LARM_HAND_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LARM_HAND_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.192" />
+      <origin rpy="0 -0 0" xyz="0.01125 0 -0.03" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_INDEX3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0349544 -0.017 -0.100974" />
+      <geometry>
+        <mesh filename="LARM_INDEX3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0349544 -0.017 -0.100974" />
+      <geometry>
+        <mesh filename="LARM_INDEX3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_INDEX3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_INDEX2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="LARM_INDEX2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="LARM_INDEX2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_INDEX2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_INDEX1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="LARM_INDEX1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="LARM_INDEX1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_INDEX1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_LITTLE3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.0273876 -0.017 -0.098252" />
+      <geometry>
+        <mesh filename="LARM_LITTLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.0273876 -0.017 -0.098252" />
+      <geometry>
+        <mesh filename="LARM_LITTLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_LITTLE3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_LITTLE2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="LARM_LITTLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="LARM_LITTLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_LITTLE2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_LITTLE1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="LARM_LITTLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="LARM_LITTLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_LITTLE1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_MIDDLE3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0141209 -0.017 -0.101883" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0141209 -0.017 -0.101883" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_MIDDLE3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_MIDDLE2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_MIDDLE2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_MIDDLE1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.03" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.03" />
+      <geometry>
+        <mesh filename="LARM_MIDDLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_MIDDLE1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_RING3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00671263 -0.017 -0.100974" />
+      <geometry>
+        <mesh filename="LARM_RING3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00671263 -0.017 -0.100974" />
+      <geometry>
+        <mesh filename="LARM_RING3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_RING3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_RING2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="LARM_RING2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="LARM_RING2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_RING2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_RING1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="LARM_RING1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="LARM_RING1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_RING1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_THUMB4_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0299678 -0.006 -0.0497134" />
+      <geometry>
+        <mesh filename="LARM_THUMB4_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0299678 -0.006 -0.0497134" />
+      <geometry>
+        <mesh filename="LARM_THUMB4_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_THUMB4_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_THUMB3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LARM_THUMB3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="LARM_THUMB3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_THUMB3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_THUMB2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0360228 -0.011 -0.0109274" />
+      <geometry>
+        <mesh filename="LARM_THUMB2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0360228 -0.011 -0.0109274" />
+      <geometry>
+        <mesh filename="LARM_THUMB2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_THUMB2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LARM_THUMB1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0245746 0 -0.0172073" />
+      <geometry>
+        <mesh filename="LARM_THUMB1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0245746 0 -0.0172073" />
+      <geometry>
+        <mesh filename="LARM_THUMB1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LARM_THUMB1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="NECK_JM_PITCH_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0.322" />
+      <geometry>
+        <mesh filename="NECK_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0.322" />
+      <geometry>
+        <mesh filename="NECK_JM_PITCH_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="NECK_JM_PITCH_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="NECK_JM_ROLL_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="NECK_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="NECK_JM_ROLL_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="NECK_JM_ROLL_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="HEAD_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="HEAD_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="HEAD_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="HEAD_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="EYE_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.068814 0 0.134" />
+      <geometry>
+        <mesh filename="EYE_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.068814 0 0.134" />
+      <geometry>
+        <mesh filename="EYE_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.12" />
+      <origin rpy="0 -0 0" xyz="-0.00188 0 0.0746" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="EYE_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LEYE_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0.04 0" />
+      <geometry>
+        <mesh filename="LEYE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0.04 0" />
+      <geometry>
+        <mesh filename="LEYE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin rpy="0 -0 0" xyz="-0.00188 0 0.0746" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="LEYE_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="REYE_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 -0.04 0" />
+      <geometry>
+        <mesh filename="REYE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 -0.04 0" />
+      <geometry>
+        <mesh filename="REYE_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin rpy="0 -0 0" xyz="-0.00188 0 0.0746" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="REYE_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_HUMERUS_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 -0.178 0.231445" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 -0.178 0.231445" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_HUMERUS_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_HUMERUS_DUMMY2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 -0.039 0" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_DUMMY2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 -0.039 0" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_DUMMY2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_HUMERUS_DUMMY2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_HUMERUS_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.073" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.073" />
+      <geometry>
+        <mesh filename="RARM_HUMERUS_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.19" />
+      <origin rpy="0 -0 0" xyz="0.024 0.0021 -0.135" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_HUMERUS_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_FOREARM_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.004 0 -0.231" />
+      <geometry>
+        <mesh filename="RARM_FOREARM_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.004 0 -0.231" />
+      <geometry>
+        <mesh filename="RARM_FOREARM_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72" />
+      <origin rpy="0 -0 0" xyz="-0.008065 0 -0.146065" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_FOREARM_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_FOREARM_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="RARM_FOREARM_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="RARM_FOREARM_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.75" />
+      <origin rpy="0 -0 0" xyz="-0.003285 0 -0.13898" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_FOREARM_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_HAND_DUMMY1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.191" />
+      <geometry>
+        <mesh filename="RARM_HAND_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.191" />
+      <geometry>
+        <mesh filename="RARM_HAND_DUMMY1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_HAND_DUMMY1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_HAND_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RARM_HAND_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RARM_HAND_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.192" />
+      <origin rpy="0 -0 0" xyz="0.01125 0 -0.03" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_INDEX3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0349544 0.017 -0.100974" />
+      <geometry>
+        <mesh filename="RARM_INDEX3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0349544 0.017 -0.100974" />
+      <geometry>
+        <mesh filename="RARM_INDEX3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_INDEX3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_INDEX2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="RARM_INDEX2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="RARM_INDEX2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_INDEX2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_INDEX1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="RARM_INDEX1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="RARM_INDEX1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_INDEX1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_LITTLE3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.0273876 0.017 -0.098252" />
+      <geometry>
+        <mesh filename="RARM_LITTLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.0273876 0.017 -0.098252" />
+      <geometry>
+        <mesh filename="RARM_LITTLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_LITTLE3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_LITTLE2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="RARM_LITTLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="RARM_LITTLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_LITTLE2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_LITTLE1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="RARM_LITTLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00520945 0 -0.0295442" />
+      <geometry>
+        <mesh filename="RARM_LITTLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_LITTLE1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_MIDDLE3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0141209 0.017 -0.101883" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0141209 0.017 -0.101883" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_MIDDLE3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_MIDDLE2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.04" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_MIDDLE2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_MIDDLE1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 -0.03" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 -0.03" />
+      <geometry>
+        <mesh filename="RARM_MIDDLE1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_MIDDLE1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_RING3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00671263 0.017 -0.100974" />
+      <geometry>
+        <mesh filename="RARM_RING3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00671263 0.017 -0.100974" />
+      <geometry>
+        <mesh filename="RARM_RING3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_RING3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_RING2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="RARM_RING2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00348623 0 -0.0398478" />
+      <geometry>
+        <mesh filename="RARM_RING2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_RING2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_RING1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="RARM_RING1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.00261467 0 -0.0298858" />
+      <geometry>
+        <mesh filename="RARM_RING1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_RING1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_THUMB4_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0299678 0.006 -0.0497134" />
+      <geometry>
+        <mesh filename="RARM_THUMB4_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0299678 0.006 -0.0497134" />
+      <geometry>
+        <mesh filename="RARM_THUMB4_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_THUMB4_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_THUMB3_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RARM_THUMB3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="RARM_THUMB3_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_THUMB3_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_THUMB2_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0360228 0.011 -0.0109274" />
+      <geometry>
+        <mesh filename="RARM_THUMB2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0360228 0.011 -0.0109274" />
+      <geometry>
+        <mesh filename="RARM_THUMB2_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_THUMB2_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RARM_THUMB1_LINK">
+    <visual>
+      <origin rpy="0 -0 0" xyz="0.0245746 0 -0.0172073" />
+      <geometry>
+        <mesh filename="RARM_THUMB1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="0.0245746 0 -0.0172073" />
+      <geometry>
+        <mesh filename="RARM_THUMB1_LINK_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin rpy="0 -0 0" xyz="0 0 0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <gazebo reference="RARM_THUMB1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="LLEG_HIP_JOINT_Y" type="revolute">
+    <parent link="PELVIS_LINK" />
+    <child link="LLEG_HIP_JM_YAW_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0.074848 -0.174" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-1.39626" upper="1.39626" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_HIP_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_HIP_JOINT_Y_trans" type="SimpleTransmission">
+      <actuator name="LLEG_HIP_JOINT_Y_motor"/>
+      <joint name="LLEG_HIP_JOINT_Y"/>
+  </transmission>
+  <joint name="LLEG_HIP_JOINT_R" type="revolute">
+    <parent link="LLEG_HIP_JM_YAW_LINK" />
+    <child link="LLEG_HIP_JM_ROLL_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.523599" upper="0.698132" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_HIP_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_HIP_JOINT_R_trans" type="SimpleTransmission">
+      <actuator name="LLEG_HIP_JOINT_R_motor"/>
+      <joint name="LLEG_HIP_JOINT_R"/>
+  </transmission>
+  <joint name="LLEG_HIP_JOINT_P" type="revolute">
+    <parent link="LLEG_HIP_JM_ROLL_LINK" />
+    <child link="LLEG_FEMUR_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 0.766 -0.643" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_HIP_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_HIP_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="LLEG_HIP_JOINT_P_motor"/>
+      <joint name="LLEG_HIP_JOINT_P"/>
+  </transmission>
+  <joint name="LLEG_KNEE_JOINT_P" type="revolute">
+    <parent link="LLEG_FEMUR_LINK" />
+    <child link="LLEG_KNEE_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.003864 0.001455 -0.387444" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_KNEE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_KNEE_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="LLEG_KNEE_JOINT_P_motor"/>
+      <joint name="LLEG_KNEE_JOINT_P"/>
+  </transmission>
+  <joint name="LLEG_KNEE_JOINT_Y" type="revolute">
+    <parent link="LLEG_KNEE_JM_PITCH_LINK" />
+    <child link="LLEG_TIBIA_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-0.523599" upper="0.698132" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_KNEE_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_KNEE_JOINT_Y_trans" type="SimpleTransmission">
+      <actuator name="LLEG_KNEE_JOINT_Y_motor"/>
+      <joint name="LLEG_KNEE_JOINT_Y"/>
+  </transmission>
+  <joint name="LLEG_ANKLE_JOINT_P" type="revolute">
+    <parent link="LLEG_TIBIA_LINK" />
+    <child link="LLEG_ANKLE_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.396" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-1.309" upper="1.309" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_ANKLE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_ANKLE_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="LLEG_ANKLE_JOINT_P_motor"/>
+      <joint name="LLEG_ANKLE_JOINT_P"/>
+  </transmission>
+  <joint name="LLEG_ANKLE_JOINT_R" type="revolute">
+    <parent link="LLEG_ANKLE_JM_PITCH_LINK" />
+    <child link="LLEG_FOOT_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-1.309" upper="1.309" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_ANKLE_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="LLEG_ANKLE_JOINT_R_trans" type="SimpleTransmission">
+      <actuator name="LLEG_ANKLE_JOINT_R_motor"/>
+      <joint name="LLEG_ANKLE_JOINT_R"/>
+  </transmission>
+  <joint name="LLEG_HEEL_JOINT_P" type="fixed">
+    <parent link="LLEG_FOOT_LINK" />
+    <child link="LLEG_HEEL_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.006 0 -0.0425" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="0" upper="0" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_HEEL_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_TOE_JOINT_P" type="revolute">
+    <parent link="LLEG_FOOT_LINK" />
+    <child link="LLEG_TOE_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.1195 0 -0.0455" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LLEG_TOE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_HIP_JOINT_Y" type="revolute">
+    <parent link="PELVIS_LINK" />
+    <child link="RLEG_HIP_JM_YAW_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 -0.074848 -0.174" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-1.39626" upper="1.39626" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_HIP_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_HIP_JOINT_Y_trans" type="SimpleTransmission">
+      <actuator name="RLEG_HIP_JOINT_Y_motor"/>
+      <joint name="RLEG_HIP_JOINT_Y"/>
+  </transmission>
+  <joint name="RLEG_HIP_JOINT_R" type="revolute">
+    <parent link="RLEG_HIP_JM_YAW_LINK" />
+    <child link="RLEG_HIP_JM_ROLL_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.698132" upper="0.523599" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_HIP_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_HIP_JOINT_R_trans" type="SimpleTransmission">
+      <actuator name="RLEG_HIP_JOINT_R_motor"/>
+      <joint name="RLEG_HIP_JOINT_R"/>
+  </transmission>
+  <joint name="RLEG_HIP_JOINT_P" type="revolute">
+    <parent link="RLEG_HIP_JM_ROLL_LINK" />
+    <child link="RLEG_FEMUR_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 0.766 0.643" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_HIP_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_HIP_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="RLEG_HIP_JOINT_P_motor"/>
+      <joint name="RLEG_HIP_JOINT_P"/>
+  </transmission>
+  <joint name="RLEG_KNEE_JOINT_P" type="revolute">
+    <parent link="RLEG_FEMUR_LINK" />
+    <child link="RLEG_KNEE_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.003864 -0.001455 -0.387444" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_KNEE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_KNEE_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="RLEG_KNEE_JOINT_P_motor"/>
+      <joint name="RLEG_KNEE_JOINT_P"/>
+  </transmission>
+  <joint name="RLEG_KNEE_JOINT_Y" type="revolute">
+    <parent link="RLEG_KNEE_JM_PITCH_LINK" />
+    <child link="RLEG_TIBIA_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0.1046 0 0.9946" />
+    <limit effort="100" lower="-0.698132" upper="0.523599" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_KNEE_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_KNEE_JOINT_Y_trans" type="SimpleTransmission">
+      <actuator name="RLEG_KNEE_JOINT_Y_motor"/>
+      <joint name="RLEG_KNEE_JOINT_Y"/>
+  </transmission>
+  <joint name="RLEG_ANKLE_JOINT_P" type="revolute">
+    <parent link="RLEG_TIBIA_LINK" />
+    <child link="RLEG_ANKLE_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.396" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-1.309" upper="1.309" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_ANKLE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_ANKLE_JOINT_P_trans" type="SimpleTransmission">
+      <actuator name="RLEG_ANKLE_JOINT_P_motor"/>
+      <joint name="RLEG_ANKLE_JOINT_P"/>
+  </transmission>
+  <joint name="RLEG_ANKLE_JOINT_R" type="revolute">
+    <parent link="RLEG_ANKLE_JM_PITCH_LINK" />
+    <child link="RLEG_FOOT_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-1.309" upper="1.309" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_ANKLE_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="RLEG_ANKLE_JOINT_R_trans" type="SimpleTransmission">
+      <actuator name="RLEG_ANKLE_JOINT_R_motor"/>
+      <joint name="RLEG_ANKLE_JOINT_R"/>
+  </transmission>
+  <joint name="RLEG_HEEL_JOINT_P" type="fixed">
+    <parent link="RLEG_FOOT_LINK" />
+    <child link="RLEG_HEEL_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.006 0 -0.0425" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="0" upper="0" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_HEEL_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_TOE_JOINT_P" type="revolute">
+    <parent link="RLEG_FOOT_LINK" />
+    <child link="RLEG_TOE_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.1195 0 -0.0455" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RLEG_TOE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="SPINE_JOINT_P" type="revolute">
+    <parent link="PELVIS_LINK" />
+    <child link="SPINE_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-0.523599" upper="0.698132" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="SPINE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <transmission name="SPINE_JOINT_P" type="SimpleTransmission">
+      <actuator name="SPINE_JOINT_P_motor"/>
+      <joint name="SPINE_JOINT_P"/>
+  </transmission>
+  <joint name="SPINE_JOINT_R" type="revolute">
+    <parent link="SPINE_JM_PITCH_LINK" />
+    <child link="SPINE_JM_ROLL_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.523599" upper="0.523599" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="SPINE_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="SPINE_JOINT_Y" type="revolute">
+    <parent link="SPINE_JM_ROLL_LINK" />
+    <child link="CHEST_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-0.785398" upper="0.785398" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="SPINE_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_SHOULDER_JOINT_P" type="revolute">
+    <parent link="CHEST_LINK" />
+    <child link="LARM_HUMERUS_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0.178 0.231445" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-2.0944" upper="0.785399" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_SHOULDER_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_SHOULDER_JOINT_R" type="revolute">
+    <parent link="LARM_HUMERUS_DUMMY1_LINK" />
+    <child link="LARM_HUMERUS_DUMMY2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0.039 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.523599" upper="2.0944" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_SHOULDER_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_SHOULDER_JOINT_Y" type="revolute">
+    <parent link="LARM_HUMERUS_DUMMY2_LINK" />
+    <child link="LARM_HUMERUS_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.073" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_SHOULDER_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_ELBOW_JOINT_P" type="revolute">
+    <parent link="LARM_HUMERUS_LINK" />
+    <child link="LARM_FOREARM_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.004 0 -0.231" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-2.3562" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_ELBOW_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_ELBOW_JOINT_Y" type="revolute">
+    <parent link="LARM_FOREARM_DUMMY1_LINK" />
+    <child link="LARM_FOREARM_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.04" />
+    <axis xyz="0.1046 0 0.9946" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_ELBOW_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_WRIST_JOINT_P" type="revolute">
+    <parent link="LARM_FOREARM_LINK" />
+    <child link="LARM_HAND_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.191" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-0.7854" upper="0.7854" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_WRIST_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_WRIST_JOINT_R" type="revolute">
+    <parent link="LARM_HAND_DUMMY1_LINK" />
+    <child link="LARM_HAND_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.7854" upper="0.7854" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_WRIST_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_INDEX3_JOINT_R" type="revolute">
+    <parent link="LARM_HAND_LINK" />
+    <child link="LARM_INDEX3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0349544 -0.017 -0.100974" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_INDEX3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_INDEX2_JOINT_R" type="revolute">
+    <parent link="LARM_INDEX3_LINK" />
+    <child link="LARM_INDEX2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.00348623 0 -0.0398478" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_INDEX2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_INDEX1_JOINT_R" type="revolute">
+    <parent link="LARM_INDEX2_LINK" />
+    <child link="LARM_INDEX1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.00261467 0 -0.0298858" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_INDEX1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_LITTLE3_JOINT_R" type="revolute">
+    <parent link="LARM_HAND_LINK" />
+    <child link="LARM_LITTLE3_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.0273876 -0.017 -0.098252" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_LITTLE3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_LITTLE2_JOINT_R" type="revolute">
+    <parent link="LARM_LITTLE3_LINK" />
+    <child link="LARM_LITTLE2_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00520945 0 -0.0295442" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_LITTLE2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_LITTLE1_JOINT_R" type="revolute">
+    <parent link="LARM_LITTLE2_LINK" />
+    <child link="LARM_LITTLE1_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00520945 0 -0.0295442" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_LITTLE1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_MIDDLE3_JOINT_R" type="revolute">
+    <parent link="LARM_HAND_LINK" />
+    <child link="LARM_MIDDLE3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0141209 -0.017 -0.101883" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_MIDDLE3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_MIDDLE2_JOINT_R" type="revolute">
+    <parent link="LARM_MIDDLE3_LINK" />
+    <child link="LARM_MIDDLE2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.04" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_MIDDLE2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_MIDDLE1_JOINT_R" type="revolute">
+    <parent link="LARM_MIDDLE2_LINK" />
+    <child link="LARM_MIDDLE1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.03" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_MIDDLE1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_RING3_JOINT_R" type="revolute">
+    <parent link="LARM_HAND_LINK" />
+    <child link="LARM_RING3_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00671263 -0.017 -0.100974" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_RING3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_RING2_JOINT_R" type="revolute">
+    <parent link="LARM_RING3_LINK" />
+    <child link="LARM_RING2_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00348623 0 -0.0398478" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_RING2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_RING1_JOINT_R" type="revolute">
+    <parent link="LARM_RING2_LINK" />
+    <child link="LARM_RING1_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00261467 0 -0.0298858" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_RING1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_THUMB4_JOINT_Y" type="revolute">
+    <parent link="LARM_HAND_LINK" />
+    <child link="LARM_THUMB4_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0299678 -0.006 -0.0497134" />
+    <axis xyz="-0.0871557 0 0.996195" />
+    <limit effort="100" lower="-2.09439" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_THUMB4_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_THUMB3_JOINT_Y" type="revolute">
+    <parent link="LARM_THUMB4_LINK" />
+    <child link="LARM_THUMB3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0" upper="0.872664" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_THUMB3_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_THUMB2_JOINT_Y" type="revolute">
+    <parent link="LARM_THUMB3_LINK" />
+    <child link="LARM_THUMB2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0360228 -0.011 -0.0109274" />
+    <axis xyz="0.40558 -0.707106 0.57922" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_THUMB2_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LARM_THUMB1_JOINT_Y" type="revolute">
+    <parent link="LARM_THUMB2_LINK" />
+    <child link="LARM_THUMB1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0245746 0 -0.0172073" />
+    <axis xyz="0.40558 -0.707106 0.57922" />
+    <limit effort="100" lower="-1.5708" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LARM_THUMB1_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="NECK_JOINT_P" type="revolute">
+    <parent link="CHEST_LINK" />
+    <child link="NECK_JM_PITCH_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0.322" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-1.13446" upper="0.785398" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="NECK_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="NECK_JOINT_R" type="revolute">
+    <parent link="NECK_JM_PITCH_LINK" />
+    <child link="NECK_JM_ROLL_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.785398" upper="0.785398" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="NECK_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="NECK_JOINT_Y" type="revolute">
+    <parent link="NECK_JM_ROLL_LINK" />
+    <child link="HEAD_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="NECK_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="EYE_JOINT_P" type="revolute">
+    <parent link="HEAD_LINK" />
+    <child link="EYE_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.068814 0 0.134" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-3.49065" upper="1.0472" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="EYE_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LEYE_JOINT_Y" type="revolute">
+    <parent link="EYE_DUMMY1_LINK" />
+    <child link="LEYE_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0.04 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-3.83972" upper="3.66519" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="LEYE_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="REYE_JOINT_Y" type="revolute">
+    <parent link="EYE_DUMMY1_LINK" />
+    <child link="REYE_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 -0.04 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-3.83972" upper="3.66519" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="REYE_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_SHOULDER_JOINT_P" type="revolute">
+    <parent link="CHEST_LINK" />
+    <child link="RARM_HUMERUS_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 -0.178 0.231445" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-2.0944" upper="0.785399" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_SHOULDER_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_SHOULDER_JOINT_R" type="revolute">
+    <parent link="RARM_HUMERUS_DUMMY1_LINK" />
+    <child link="RARM_HUMERUS_DUMMY2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 -0.039 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-2.0944" upper="0.523599" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_SHOULDER_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_SHOULDER_JOINT_Y" type="revolute">
+    <parent link="RARM_HUMERUS_DUMMY2_LINK" />
+    <child link="RARM_HUMERUS_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.073" />
+    <axis xyz="0 0 1" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_SHOULDER_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_ELBOW_JOINT_P" type="revolute">
+    <parent link="RARM_HUMERUS_LINK" />
+    <child link="RARM_FOREARM_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.004 0 -0.231" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-2.3562" upper="0" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_ELBOW_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_ELBOW_JOINT_Y" type="revolute">
+    <parent link="RARM_FOREARM_DUMMY1_LINK" />
+    <child link="RARM_FOREARM_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.04" />
+    <axis xyz="0.1046 0 0.9946" />
+    <limit effort="100" lower="-1.5708" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_ELBOW_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_WRIST_JOINT_P" type="revolute">
+    <parent link="RARM_FOREARM_LINK" />
+    <child link="RARM_HAND_DUMMY1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.191" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-0.7854" upper="0.7854" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_WRIST_JOINT_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_WRIST_JOINT_R" type="revolute">
+    <parent link="RARM_HAND_DUMMY1_LINK" />
+    <child link="RARM_HAND_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="-0.7854" upper="0.7854" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_WRIST_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_INDEX3_JOINT_R" type="revolute">
+    <parent link="RARM_HAND_LINK" />
+    <child link="RARM_INDEX3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0349544 0.017 -0.100974" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_INDEX3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_INDEX2_JOINT_R" type="revolute">
+    <parent link="RARM_INDEX3_LINK" />
+    <child link="RARM_INDEX2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.00348623 0 -0.0398478" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_INDEX2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_INDEX1_JOINT_R" type="revolute">
+    <parent link="RARM_INDEX2_LINK" />
+    <child link="RARM_INDEX1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.00261467 0 -0.0298858" />
+    <axis xyz="0.996195 0 0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_INDEX1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_LITTLE3_JOINT_R" type="revolute">
+    <parent link="RARM_HAND_LINK" />
+    <child link="RARM_LITTLE3_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.0273876 0.017 -0.098252" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_LITTLE3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_LITTLE2_JOINT_R" type="revolute">
+    <parent link="RARM_LITTLE3_LINK" />
+    <child link="RARM_LITTLE2_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00520945 0 -0.0295442" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_LITTLE2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_LITTLE1_JOINT_R" type="revolute">
+    <parent link="RARM_LITTLE2_LINK" />
+    <child link="RARM_LITTLE1_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00520945 0 -0.0295442" />
+    <axis xyz="0.984808 0 -0.173648" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_LITTLE1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_MIDDLE3_JOINT_R" type="revolute">
+    <parent link="RARM_HAND_LINK" />
+    <child link="RARM_MIDDLE3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0141209 0.017 -0.101883" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_MIDDLE3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_MIDDLE2_JOINT_R" type="revolute">
+    <parent link="RARM_MIDDLE3_LINK" />
+    <child link="RARM_MIDDLE2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.04" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_MIDDLE2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_MIDDLE1_JOINT_R" type="revolute">
+    <parent link="RARM_MIDDLE2_LINK" />
+    <child link="RARM_MIDDLE1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 -0.03" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_MIDDLE1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_RING3_JOINT_R" type="revolute">
+    <parent link="RARM_HAND_LINK" />
+    <child link="RARM_RING3_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00671263 0.017 -0.100974" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_RING3_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_RING2_JOINT_R" type="revolute">
+    <parent link="RARM_RING3_LINK" />
+    <child link="RARM_RING2_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00348623 0 -0.0398478" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_RING2_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_RING1_JOINT_R" type="revolute">
+    <parent link="RARM_RING2_LINK" />
+    <child link="RARM_RING1_LINK" />
+    <origin rpy="0 -0 0 " xyz="-0.00261467 0 -0.0298858" />
+    <axis xyz="0.996195 0 -0.0871557" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_RING1_JOINT_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_THUMB4_JOINT_Y" type="revolute">
+    <parent link="RARM_HAND_LINK" />
+    <child link="RARM_THUMB4_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0299678 0.006 -0.0497134" />
+    <axis xyz="-0.0871557 0 0.996195" />
+    <limit effort="100" lower="0" upper="2.09439" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_THUMB4_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_THUMB3_JOINT_Y" type="revolute">
+    <parent link="RARM_THUMB4_LINK" />
+    <child link="RARM_THUMB3_LINK" />
+    <origin rpy="0 -0 0 " xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0" upper="0.872664" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_THUMB3_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_THUMB2_JOINT_Y" type="revolute">
+    <parent link="RARM_THUMB3_LINK" />
+    <child link="RARM_THUMB2_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0360228 0.011 -0.0109274" />
+    <axis xyz="0.40558 0.707106 0.57922" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_THUMB2_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RARM_THUMB1_JOINT_Y" type="revolute">
+    <parent link="RARM_THUMB2_LINK" />
+    <child link="RARM_THUMB1_LINK" />
+    <origin rpy="0 -0 0 " xyz="0.0245746 0 -0.0172073" />
+    <axis xyz="0.40558 0.707106 0.57922" />
+    <limit effort="100" lower="0" upper="1.5708" velocity="3" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <gazebo reference="RARM_THUMB1_JOINT_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <!--
+  <mujoco><compiler balanceinertia="true" boundinertia="0.1" boundmass="0.1" /><option collision="predefined" /></mujoco>
+-->
+</robot>
